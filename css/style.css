@@ -5,9 +5,12 @@
     box-sizing: border-box;
 }   
 
-h1, h2{
+h1, h2 , h3, h4, h5 , h6{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* Inicio */
+
 .eslogan{
     color: #ffffffb9;
     background-color: rgba(0, 0, 0, 0.473);
@@ -15,7 +18,7 @@ h1, h2{
     position: absolute;
     top: 50%;
     left: 15%;
-
+    display: flex;
 }
 .stock{
     padding: 2%;
@@ -33,19 +36,15 @@ h1, h2{
 .stock_container{
     width: 100%;
     display: grid;
-    gap: 5%;
     grid-template-columns: repeat(3, 1fr);
-    
-    
+       
 }
 
 .card{
-    margin: 5%; 
+    margin: 10%; 
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 }
-/* .card-img-top{
-    width: 70%
-} */
+
 .card-body{
     text-align: center;
 }
@@ -105,6 +104,45 @@ padding: 1%;
     flex-direction: column;
 
 }
+
+
+
+/* Catalogo */
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(2, 0.7fr);
+    grid-template-rows: 83% 40px repeat(3, 100px) 60px;
+    /* grid-template-areas:
+    "barra_lateral vehiculos"
+    "barra_lateral vehiculos"
+    "barra_lateral form"; */
+}
+
+.barra_lateral{
+    background-color: navajowhite;
+    width: 60%;
+    
+}
+
+.vehiculos h1{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.vehiculos_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+
+}
+
+.vehiculos_container .card{
+    margin: 1rem ;
+}
+
+
+/* Footer */
 
 footer .container-fluid{
     height: 10em;
