@@ -120,7 +120,7 @@ padding: 1%;
 
 .barra_lateral{
     background-color: navajowhite;
-    width: 60%;
+    width: 70%;
     
 }
 
@@ -177,6 +177,7 @@ footer .d-flex{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         overflow-x: scroll;
+        gap: 2%;
     }
 
     .data{
@@ -198,5 +199,12 @@ footer .d-flex{
 
 @media (max-width:576px)
 {
+    .eslogan h1{
+        font-size: 0.5rem;
+    }
+
+    .stock_container{
+        gap: 3%;
+    }
 
 }
