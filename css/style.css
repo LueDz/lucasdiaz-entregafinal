@@ -165,29 +165,6 @@ h1, h2 , h3, h4, h5 , h6{
 }
 
 
-/* Footer */
-
-footer .container-fluid{
-    height: 10em;
-    text-align: center;
-    
-/*     flex-direction: column; */
-}
-
-footer .navbar-brand{
-    background-color:
-    
-
-}
-
-footer .navbar-nav{
-   display: inline-block;
-}
-
-footer .d-flex{
-    flex-direction:  ;
-}
-
 
 
 /* footer 2 */
