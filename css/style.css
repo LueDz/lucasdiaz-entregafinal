@@ -13,7 +13,8 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Inicio */
+
+/* Index*/
 
 .eslogan{
     color: #ffffffb9;
@@ -175,9 +176,43 @@ body{
     grid-area: numeracion;
 }
 
+/* Contacto */
 
+.info{
+    display: flex;
+    gap: 5%;
+}
 
+.ubicacion{
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+}
 
+.ubicacion h2, .ubicacion h4{
+    margin: 3%;
+}
+
+.form{
+    width: 50%;
+    text-align: center;
+    margin: 5%;
+    margin-top: 3% ;
+}
+
+.form h2{
+    padding: 1%;
+}
+
+.form-floating{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
+   
+}
+
+.form .btn{
+    margin: 2%;
+
+}
 /* footer */
 
 footer {
@@ -283,7 +318,9 @@ footer {
         height: 100%;
     }
 
-
+    .icono{
+        position: absolute;
+    }
 }
 
 @media (max-width:576px)
