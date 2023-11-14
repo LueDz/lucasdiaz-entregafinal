@@ -102,6 +102,7 @@ body{
     width: 350px;
     background-color: #ebebeb;
     border-radius: 10px;
+    padding: 2%;
 }
 
 .opinion_bubble{
@@ -110,7 +111,6 @@ body{
     flex-direction: column;
 
 }
-
 
 
 /* Catalogo */
@@ -174,27 +174,30 @@ body{
 .numeracion{
     margin-left: 40%;
     grid-area: numeracion;
+    margin-bottom: 14%;
 }
 
 /* Contacto */
 
 .info{
     display: flex;
-    gap: 5%;
+
 }
 
-.ubicacion{
+.info .ubicacion{
+    left: ;
+    width: 100%;
     text-align: center;
     padding: 1%;
     margin: 1%;
 }
 
-.ubicacion h2, .ubicacion h4{
+.info .ubicacion h2, .ubicacion h4{
     margin: 3%;
 }
 
 .form{
-    width: 50%;
+    width: 70%;
     text-align: center;
     margin: 5%;
     margin-top: 3% ;
@@ -306,8 +309,14 @@ footer {
 {
     .icono label{
         display: block;
+
     }
     
+    .icono label i.bx {
+    
+        font-size: 3rem;
+    }
+
     .filter{
         display: none;
     }
@@ -318,9 +327,33 @@ footer {
         height: 100%;
     }
 
-    .icono{
-        position: absolute;
+    .vehiculos{
+        margin-top: 5% ;
     }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .form{
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width:768px)
+{
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .footer ul{
+        
+        margin: 0;
+    }
+
+    
 }
 
 @media (max-width:576px)
@@ -337,5 +370,16 @@ footer {
     .mapa{
         width: 250px;
         height: 100px;
+    }
+
+    .contacto ul .link_item{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contacto .d-flex{
+        flex-direction: column;
+        width: 60%;
     }
 }
