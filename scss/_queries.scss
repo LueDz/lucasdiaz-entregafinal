@@ -1,0 +1,117 @@
+@media (max-width:1130px)
+{
+    .vehiculos_container{
+        grid-template-columns: repeat(2 , 1fr);
+        margin-left: 15%;
+    }
+    .exp_container{
+        grid-template-columns: repeat(6, 1fr);
+        overflow-x: scroll;
+        gap: 1rem; 
+    }
+}
+
+
+@media (max-width:992px)
+{
+    .eslogan h1{
+        top: 20%;
+        
+    }
+
+    .stock_container{
+        overflow-x: scroll;
+        gap: 2%;
+    }
+
+    .data{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mapa{
+        width: 400px;
+        height: 200px;
+    }
+
+    
+}
+
+@media (max-width:890px)
+{
+    .icono label{
+        display: block;
+
+    }
+    
+    .icono label i.bx {
+    
+        font-size: 3rem;
+    }
+
+    .filter{
+        display: none;
+    }
+
+    #check_filter:checked~.filter{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .vehiculos{
+        margin-top: 5% ;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .form{
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width:768px)
+{
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .footer ul{
+        
+        margin: 0;
+    }
+
+    
+}
+
+@media (max-width:576px)
+{
+    .eslogan h1{
+        top: 20%;
+
+    }
+
+    .stock_container{
+        gap: 3%;
+    }
+
+    .mapa{
+        width: 250px;
+        height: 100px;
+    }
+
+    .contacto ul .link_item{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contacto .d-flex{
+        flex-direction: column;
+        width: 60%;
+    }
+}
