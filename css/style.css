@@ -13,16 +13,58 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-/* Index*/
+/* Navegacion */
+#checkbox {
+  display: none;
+}
+
+#checkbox:checked ~ .menu_nav {
+  display: none;
+}
+
+.menu {
+  background-color: #fff;
+  height: 3.5rem;
+  display: flex;
+}
+.menu .menu_check label i .bx {
+  font-size: 2rem;
+}
+.menu .menu_check span {
+  font-size: 2.1rem;
+}
+.menu .menu_nav {
+  display: flex;
+  padding: 1%;
+  font-size: 1.1rem;
+  margin-left: 30rem;
+}
+.menu .menu_nav .nav_item {
+  margin: 0 0.7rem;
+  list-style: none;
+}
+.menu .menu_nav .nav_item :hover {
+  background-color: #84B868;
+}
+.menu .menu_nav .nav_item a {
+  border-radius: 0.8rem;
+  text-decoration: none;
+  color: black;
+  padding: 5% 8%;
+}
+
+/*Pagina de inicio*/
 .eslogan {
   color: rgba(255, 255, 255, 0.7254901961);
   background-color: rgba(0, 0, 0, 0.473);
   z-index: 1;
   position: absolute;
-  top: 50%;
-  left: 15%; 
+  top: 47%;
+  left: 16%;
   display: flex;
   font-size: 1.5rem;
+  border-radius: 0.8rem;
+  padding: 1%;
 }
 
 .stock {
@@ -32,23 +74,31 @@ body {
 }
 .stock h2 {
   padding: 1rem;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   justify-content: center;
 }
 .stock .stock_container {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
-.stock .stock_container .card {
-  margin: 10%;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
-}
-.stock .stock_container .card .card-body {
+.stock .stock_container .stock_card {
+  width: 18rem;
+  background-color: white;
+  border-radius: 1rem;
   text-align: center;
+  border: solid 1px rgb(0, 0, 0);
+}
+.stock .stock_container .stock_card .card_img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.stock .stock_container .stock_card p {
+  background-color: #fff;
 }
 
+/* Informacion de la concesionaria */
 .data {
   width: 100%;
   padding: 1%;
@@ -74,6 +124,7 @@ body {
   padding: 1%;
 }
 
+/* Experiencia de clientes */
 .experiencias h5 {
   text-align: center;
   padding-top: 1%;
@@ -83,26 +134,33 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 2%;
+  margin: 0 0 0 1%;
   text-align: center;
 }
 .experiencias .exp_container .opinion_card {
   width: 350px;
   background-color: #ebebeb;
   border-radius: 10px;
-  padding: 2%;
+  padding: 1%;
 }
 .experiencias .exp_container .opinion_card .opinion_bubble {
   display: flex;
   width: 100%;
   flex-direction: column;
 }
+.experiencias .exp_container .opinion_card .opinion_happy {
+  color: #84B868;
+}
 
-/* Catalogo */
+/*Pagina de catalogo */
 .catalogo {
   display: grid;
   grid-template-columns: 13% 80%;
   grid-template-rows: 0fr auto 0.1fr;
   grid-template-areas: "barra vehiculos" "barra heviculos" "barra numeracion";
+  /* Barra lateral de filtros */
+  /* Grilla de vehiculos */
+  /* Pie numerado de paginas */
 }
 .catalogo .barra_lateral {
   margin-top: 50%;
@@ -115,10 +173,13 @@ body {
 .catalogo .barra_lateral .filtros {
   margin: 10%;
 }
-.catalogo .barra_lateral .filtros #check_filter, .catalogo .barra_lateral .filtros .icono label {
+.catalogo .barra_lateral .filtros #check_filter {
   display: none;
 }
-.catalogo .barra_lateral .filtros .categoria, .catalogo .barra_lateral .filtros .estado, .catalogo .barra_lateral .filtros .financiacion, .catalogo .barra_lateral .filtros .combustible, .catalogo .barra_lateral .filtros .traccion {
+.catalogo .barra_lateral .filtros #check_filter:checked ~ .filter {
+  display: none;
+}
+.catalogo .barra_lateral .filtros .filter .categoria, .catalogo .barra_lateral .filtros .filter .estado, .catalogo .barra_lateral .filtros .filter .financiacion, .catalogo .barra_lateral .filtros .filter .combustible, .catalogo .barra_lateral .filtros .filter .traccion {
   padding: 3%;
   margin: 0.7rem;
 }
@@ -142,12 +203,12 @@ body {
   margin: 1rem;
 }
 .catalogo .numeracion {
-  margin-left: 40%;
   grid-area: numeracion;
-  margin-bottom: 14%;
+  margin-bottom: 2%;
+  margin-left: 35%;
 }
 
-/* Contacto */
+/*Pagina de contacto */
 .info {
   display: flex;
 }
@@ -179,41 +240,41 @@ body {
 /* footer */
 .footer {
   background-color: rgb(18, 18, 18);
-  padding: 1rem 5%;
+  padding: 1% 5%;
   width: 100%;
-  height: 230px;
+  height: 13rem;
   display: flex;
   justify-content: space-between;
   color: #fff;
 }
-.footer h2 {
-  font-size: 1.4rem;
+.footer .links h2, .footer .redes h2, .footer .contact h2 {
+  font-size: 1.6rem;
+  padding: 0% 0%;
 }
-.footer ul {
-  padding: 10px 0;
+.footer .links ul, .footer .redes ul, .footer .contact ul {
+  padding: 0;
   width: 160px;
-  height: 160px;
+  height: 90px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
-.footer ul li {
-  text-decoration: none;
+.footer .links ul .link_item, .footer .redes ul .link_item, .footer .contact ul .link_item {
   list-style: none;
 }
-.footer ul .link_item a {
+.footer .links ul .link_item a, .footer .redes ul .link_item a, .footer .contact ul .link_item a {
   color: #fff;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
-.footer ul .link_item a i .bx {
+.footer .links ul .link_item a i, .footer .redes ul .link_item a i, .footer .contact ul .link_item a i {
+  color: #84B868;
+  padding: 3%;
+}
+.footer .links ul .link_item a i .bx, .footer .redes ul .link_item a i .bx, .footer .contact ul .link_item a i .bx {
   margin-right: 6px;
   font-size: 1.2rem;
 }
-.footer .contacto ul {
-  height: 90px;
-}
-
 @media (max-width: 1130px) {
   .vehiculos_container {
     grid-template-columns: repeat(2, 1fr);

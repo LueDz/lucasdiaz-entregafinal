@@ -10,33 +10,48 @@
     <link rel="stylesheet" href="./css/style.css">
     
 </head>
+
+
 <body>
-  
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Concesionaria Time</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse show" id="navbarDark">
-            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/catalogo.html">Catalogo</a> 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-    </nav>
+    
+  <nav class="menu" >
+
+    <input type="checkbox" id="checkbox">
+
+    <div class="menu_check">
+    
+      <label for="checkbox">
+        <i class='bx bx-menu bx-sm'></i>
+      </label>
+
+      <span>Concesionaria Time</span>
+
+    </div>
+      
+      <ul class="menu_nav">
+
+        <li class="nav_item"> 
+          <a href="index.html">Inicio</a>
+        </li>
+
+        <li class="nav_item">
+          <a href="./pages/catalogo.html">Catalogo</a>
+        </li>
+
+        <li class="nav_item">
+          <a href="./pages/nosotros.html">Nosotros</a>
+        </li>
+
+        <li class="nav_item">
+          <a href="./pages/merchandising.html">Merchandising</a>
+        </li>
+
+        <li class="nav_item">
+          <a href="./pages/contacto.html">Contacto</a>
+        </li>
+
+      </ul>
+  </nav>
 
     <header class="header_container">
 
@@ -77,7 +92,7 @@
       
         <section class="stock_container">
 
-        <div class="card" style="width: 18rem;">
+       <!--  <div class="card" style="width: 18rem;">
             <img src="./img/auto1.jpg" class="card-img-top" alt="auto1">
             <div class="card-body">
             <h5 class="card-title">Chevrolet Chevy</h5>
@@ -105,8 +120,57 @@
                 Esta Ford F100 es perfecta para enfrentar cualquier desafío, trabajo o en tus aventuras en carretera.</p>
             <a href="./pages/catalogo.html" class="btn btn-primary">Ver mas</a>
             </div>
-        </div>
-        </section>
+        </div> -->
+
+          <div class="stock_card">
+            
+
+            <img src="./img/auto1.jpg" alt="auto 1" class="card_img">
+            
+            <h3>Auto 1</h3>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores libero nostrum quos repudiandae voluptatem ipsum nesciunt ad molestias accusamus, quod magni ducimus! Quis ratione veritatis incidunt accusamus quidem.
+            </p>
+
+          </div>
+
+          <div class="stock_card">
+            
+            <h3>Auto 1</h3>
+
+            <img src="./img/auto1.jpg" alt="auto 1" class="card_img">
+            
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores libero nostrum quos repudiandae voluptatem ipsum nesciunt ad molestias accusamus, quod magni ducimus! Quis ratione veritatis incidunt accusamus quidem.
+            </p>
+
+          </div>
+
+          <div class="stock_card">
+            
+            <h3>Auto 1</h3>
+
+            <img src="./img/auto1.jpg" alt="auto 1" class="card_img">
+            
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores libero nostrum quos repudiandae voluptatem ipsum nesciunt ad molestias accusamus, quod magni ducimus! Quis ratione veritatis incidunt accusamus quidem.
+            </p>
+
+          </div>
+
+          <div class="stock_card">
+            
+            <h3>Auto 1</h3>
+
+            <img src="./img/auto1.jpg" alt="auto 1" class="card_img">
+            
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores libero nostrum quos repudiandae voluptatem ipsum nesciunt ad molestias accusamus, quod magni ducimus! Quis ratione veritatis incidunt accusamus quidem.
+            </p>
+
+          </div>
+      </section>
     </section>
    
     <section class="data">
@@ -231,10 +295,18 @@
         <h2>Concesionaria Time</h2>
         <ul>
           <li class="link_item"><a href="./index.html"> <i class='bx bx-home-alt-2'></i> Inicio</a></li>
+
           <li class="link_item"><a href="./pages/catalogo.html"> <i class='bx bx-car'></i> Catalogo</a></li>
-          <li class="link_item"><a href="./pages/contacto.html"> <i class='bx bx-envelope'></i> Contacto</a></li>
+
+          <li class="link_item"><a href="./pages/nosotros.html"> <i class='bx bx-user'></i></i> Nosotros</a></li>
+
+          <li class="link_item"><a href="./pages/merch.html"> <i class='bx bx-shopping-bag'></i>Merchandising</a></li>
+
+          <li class="link_item"><a href="./pages/contacto.html"> <i class='bx bx-chat'></i>Contacto</a></li>
+
         </ul>
       </section>
+
       <section class="redes">
         <h2>Seguinos</h2>
         <ul>
@@ -250,12 +322,16 @@
         </ul>
       </section>
       <section class="contact">
+
         <h2>Contacto</h2>
+
         <section class="contacto">
           <ul>
-            <li class="link_item">Telefono: <a href="#">0800-156-TIME</a>
+            <li class="link_item"> <a href="#"><i class='bx bx-phone'></i> Telefono:
+              <br>0800-156-TIME</a>
             </li>
-            <li class="link_item">Mail: <a href="#">ventas@concesionariatime.com</a>
+            <li class="link_item"> <a href="#"> 
+              <i class='bx bx-envelope' ></i> Mail: ventas@concesionariatime.com</a>
             </li>
           </ul>
           
