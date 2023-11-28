@@ -11,34 +11,47 @@
 </head>
 <body>
         
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Concesionaria Time</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse show" id="navbarDark">
-            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./catalogo.html">Catalogo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./contacto.html">Contacto</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-    </nav>
+  <nav class="menu">
+    <input type="checkbox" id="checkbox" />
 
+    <div class="menu_check">
+      <label for="checkbox">
+        <i class="bx bx-menu bx-sm"></i>
+      </label>
+
+
+      <span>Concesionaria Time</span>
+    </div>
+
+    <ul class="menu_nav">
+      <li class="nav_item">
+        <a href="../index.html">Inicio</a>
+      </li>
+
+      <li class="nav_item">
+        <a href="./catalogo.html">Catalogo</a>
+      </li>
+
+      <li class="nav_item">
+        <a href="./nosotros.html">Nosotros</a>
+      </li>
+
+      <li class="nav_item">
+        <a href="./merch.html">Merchandising</a>
+      </li>
+
+      <li class="nav_item">
+        <a href="./contacto.html">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+
+  <header>
 <img src="../img/contacto.jpg" alt="" width="100%" class="banner">
 
+<h1>Te estabamos esperando</h1>
+
+</header>
   <div class="info">
 
       <div class="ubicacion">
@@ -84,6 +97,8 @@
           
       </section>
     </div>
+
+
     <script src="../js/bootstrap.js"></script>
 </body>
 
@@ -100,7 +115,7 @@
 
         <li class="link_item"><a href="./merch.html"> <i class='bx bx-shopping-bag'></i>Merchandising</a></li>
 
-        <li class="link_item"><a href="./contacto.html"> <i class='bx bx-envelope'></i> Contacto</a></li>
+        <li class="link_item"><a href="./contacto.html"> <i class='bx bx-chat'></i>Contacto</a></li>
 
       </ul>
     </section>
@@ -108,35 +123,43 @@
     <section class="redes">
       <h2>Seguinos</h2>
       <ul>
+
         <li class="link_item">
           <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i>Instagram</a>
         </li>
+
         <li class="link_item">
           <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i>Facebook</a>
         </li>
+
         <li class="link_item">
           <a href="https://www.youtube.com/"><i class="bx bxl-youtube"></i>Youtube</a>
+        </li>
+
+        <li class="link_item">
+          <a href="https://www.google.com/maps/search/car+one/@-34.4809597,-58.6682848,12z?hl=es-419&gl=AR"><i class='bx bxs-map' ></i> Google Maps</a>
         </li>
       </ul>
     </section>
     <section class="contact">
 
       <h2>Contacto</h2>
-      
+
       <section class="contacto">
         <ul>
-          <li class="link_item"> <a href="#"><i class='bx bx-phone'></i> Telefono:
-            <br>0800-156-TIME</a>
+          <li class="link_item"> <a href="#"><i class='bx bx-phone'></i>
+            0800-156-TIME</a>
           </li>
           <li class="link_item"> <a href="#"> 
-            <i class='bx bx-envelope' ></i> Mail: ventas@concesionariatime.com</a>
+            <i class='bx bx-envelope' ></i>ventas@concesionariatime.com</a>
           </li>
+          <div class="boton_buscar">
+            <form class="form_buscar">
+              <input type="search" placeholder="Tu busqueda">
+              <button class="form_enviar">Buscar</button>
+            </form>
+          </div>
         </ul>
-        
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Buscar</button>
-        </form>
       </section>
   </section>
 </footer>

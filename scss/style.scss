@@ -1,375 +1,458 @@
 @import "../scss/reset";
 @import "../scss/variables";
+@import "./fonts" ;
 
-
-h1, h2 , h3, h4, h5 , h6{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+h1 {
+    font-family: "bree serif";
+    text-align: center;
+    margin: 2%;
+    
 }
 
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+h2{
+    font-family: "bree serif";
+
+}
+    
+
+h3,
+h4,
+h5,
+h6 {
+  font-family:"nunito";
 }
 
+body {
+  font-family: "nunito";
+}
 
 /* Navegacion */
 
-#checkbox{
-    display: none;
+#checkbox {
+  display: none;
 }
 
-#checkbox:checked ~ .menu_nav{
-    display: none;
+#checkbox:checked ~ .menu_nav {
+  display: none;
 }
 
-.menu{
-    background-color: #fff;
-    height: 3.5rem;
+.menu {
+  background-color: #fff;
+  height: 3.8rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .menu_check {
+
+    label {
+      i {
+        .bx {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .logo{
+        width: 50px;
+    }
+
+    span {
+      font-size: 2rem;
+      font-family: "bree serif";
+    }
+  }
+
+  .menu_nav {
     display: flex;
-    
-    .menu_check{
+    padding: 3%;
+    font-size: 1.1rem;
+    margin-left: 7rem ;
 
+    .nav_item {
+      margin: 0 0.7rem;
+      list-style: none;
 
-        label{
-        i{
-            
-            .bx{
-                font-size: 2rem;
-            }
-        }
-        }
+      :hover {
+        background-color: #84b868;
+      }
 
-        span{
-            font-size: 2.1rem;
-
-        }
+      a {
+        border-radius: 0.8rem;
+        text-decoration: none;
+        color: black;
+        padding: 5% 8%;
+      }
     }
-
-    
-    .menu_nav{
-
-        display: flex;
-        padding: 1%;
-        font-size: 1.1rem;
-        margin-left: 30rem;
-
-        .nav_item{        
-                   
-            margin: 0 0.7rem;
-            list-style: none;
-            
-            :hover {
-                background-color: #84B868;                
-            }       
-
-            a{
-                border-radius: 0.8rem;
-                text-decoration: none;  
-                color: black;  
-                padding: 5% 8%;
-            }
-        }
-    }
+  }
 }
 
 /*Pagina de inicio*/
 
-.eslogan{
-    color: #ffffffb9;
+.eslogan {
+  color: #ffffffb9;
+  z-index: 1;
+  position: absolute;
+  top: 46%;
+  left: 15%;
+
+  h1{   
+    width: 100%;
+    padding: 1rem;
     background-color: rgba(0, 0, 0, 0.473);
-    z-index: 1;
-    position: absolute;
-    top: 47%;
-    left: 16%;
-    display: flex;
-    font-size: 1.5rem;
     border-radius: 0.8rem;
-    padding: 1%;
+  }
 }
 
-.stock{
-    padding: 2%;
+.stock {
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+
+  h2 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .stock_container {
     width: 100%;
-    height: 100%;
-    
-    h2{
-        padding: 1rem;
-        font-size: 2.5rem;
-        text-align: center;
-        justify-content: center;
-    }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
-    .stock_container{
+    .stock_card {
+      width: 18rem;
+      background-color: white;
+      border-radius: 1rem;
+      text-align: center;
+      border: solid 1px rgb(0, 0, 0);
+
+      h3 {
+      }
+
+      .card_img {
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-     
-        .stock_card{
-            width: 18rem ;
-            background-color:white ;
-            border-radius: 1rem;
-            text-align: center;
-            border: solid 1px rgb(0, 0, 0);
+        border-radius: 1rem;
+      }
 
-            h3{
-            }
-
-            .card_img{
-                width: 100%;
-                border-radius: 1rem;
-            }
-
-            p{
-                background-color: #fff;
-            }
-        }
+      p {
+        background-color: #fff;
+      }
     }
-
+  }
 }
 
 /* Informacion de la concesionaria */
 
-.data{
-    width: 100%;
-    padding: 1%;
-    display: flex;
-    background-color: rgb(18, 18, 18); 
+.data {
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  /* background-color: rgb(18, 18, 18); */
+  /* background-image: linear-gradient(600deg,  #84b868,#121212); */
 
-    .presentacion{
-        padding: 0% 3% 0% 2%;
-        text-align: center;
-        color: #fff;
+  background-image: linear-gradient(to right, #121212, #121212, #121212, #121212, #121212, #1c1d22, #212933, #233644, #135765, #007976, #3e9a75, #84b868 );
 
-        h5{
-            padding: 1%;
-            padding-bottom: 5%;
-        }
+  
+
+  .presentacion {
+    padding: 0% 3% 0% 2%;
+    text-align: center;
+    color: #fff;
+
+    h4 {
+      padding: 1%;
+      padding-bottom: 5%;
     }
+  }
 
-    .ubicacion{
-        padding-right: 1%;
-        padding-bottom: 1%;
+  .ubicacion {
+    padding-right: 1%;
+    padding-bottom: 1%;
 
-        h5{
-            text-align: center;
-            color:#fff;
-            padding: 1%;
-        }
+    h5 {
+      text-align: center;
+      color: #fff;
+      padding: 1%;
     }
+  }
 }
 
 /* Experiencia de clientes */
 
-.experiencias{
+.experiencias {
+  h3 {
+    text-align: center;
+    padding-top: 1%;
+  }
 
-    h5{
-        text-align: center;
-        padding-top: 1%;
+  .exp_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2%;
+    margin: 0 0 0 1%;
+    text-align: center;
+
+    .opinion_card {
+      width: 350px;
+      background-color: #ebebeb;
+      border-radius: 10px;
+      padding: 1%;
+
+      .opinion_bubble {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .opinion_happy {
+        color: #84b868;
+      }
     }
-
-    .exp_container{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 2rem;
-        padding: 2%;
-        margin: 0 0 0 1%;
-        text-align: center;
-        
-        .opinion_card{
-            width: 350px;
-            background-color: #ebebeb;
-            border-radius: 10px;
-            padding: 1%;
-
-            .opinion_bubble{
-                display: flex;
-                width: 100%;
-                flex-direction: column;
-            }
-            
-            .opinion_happy{
-             color: #84B868;       
-            }
-        }
-    }
+  }
 }
 
 /*Pagina de catalogo */
 
-.catalogo{
-    display: grid;
-    grid-template-columns: 13% 80%;
-    grid-template-rows: 0fr auto 0.1fr;
-    grid-template-areas: 
+.catalogo {
+  display: grid;
+  grid-template-columns: 13% 80%;
+  grid-template-rows: 0fr auto 0.1fr;
+  grid-template-areas:
     "barra vehiculos"
     "barra heviculos"
     "barra numeracion";
 
-    /* Barra lateral de filtros */
 
-    .barra_lateral{
-        margin-top: 50%;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap; 
-        grid-area: barra;   
-        text-align: center;
+  /* Barra lateral de filtros */
 
-        .filtros{   
-            margin: 10%;
+  .barra_lateral {
+    margin-top: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: barra;
+    text-align: center;
+
+    .filtros {
+      margin: 10%;
+
+      #check_filter {
+        display: none;
+      }
+
+      #check_filter:checked ~ .filter {
+        display: none;
+      }
+
+      .filter {
+        .categoria,
+        .estado,
+        .financiacion,
+        .combustible,
+        .traccion {
+          padding: 3%;
+          margin: 0.7rem;
+        }
+      }
+    }
+  }
+
+  /* Grilla de vehiculos */
+
+  .vehiculos {
+    grid-area: vehiculos;
+
+
+    .vehiculos_container {
+      width: 100%;
+      height: 100%;
+      margin: 1%;
+      margin-left: 5%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .card {
+        margin: 1rem;
+      }
+    }
+  }
+
+  /* Pie numerado de paginas */
+
+  .numeracion {
+    grid-area: numeracion;
+    margin-bottom: 2%;
+    margin-left: 35%;
+  }
+}
+
+/* Pagina de nosotros */
+
+.nosotros_bienvenida{
+    text-align: center;
+    margin: 2rem 0;
+
+}
+
+.nosotros_historia{
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    text-align: center;
+    .historia_txt{
+        padding: 0 7%;
+
+
+        h4{
+            font-size: 1.8rem;
+        }
+    }
+
+    .historia_img{
         
-            #check_filter{
-                display: none;
-            }
-
-            #check_filter:checked ~ .filter{
-                display: none;
-            }
-            
-            .filter{
-                .categoria, .estado, .financiacion, .combustible, .traccion{    
-                    padding: 3%;
-                    margin: 0.7rem;
+        .img_grupo{
+            list-style: none;
+            .img_foto{
+                img{
+                width: 25rem;
                 }
             }
-        }
-    }
-
-/* Grilla de vehiculos */
-
-    .vehiculos{
-        grid-area: vehiculos;
-    
-        h1{
-            text-align: center;
-            margin-top: 2%;
-            margin-left: 5%;
-        }
-        
-        .vehiculos_container{
-            width: 100%;
-            height: 100%;
-            margin:1%;
-            margin-left: 5%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        
-            .card{
-                margin: 1rem ;
             }
-            
-        }
-    }
-
-    /* Pie numerado de paginas */
-
-    .numeracion{
-        grid-area: numeracion;
-        margin-bottom: 2%;
-        margin-left: 35%;
+        
     }
 }
 
+
+
+
+
+
+
+
+
 /*Pagina de contacto */
 
-.info{
 
-    display: flex;
+.info {
+  display: flex;
 
-    .ubicacion{
-        width: 100%;
-        text-align: center;
-        padding: 1%;
-        margin: 1%;
+  .ubicacion {
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    
 
-        h2, h4{
-            margin: 3%;
-        }
+    h2,
+    h4 {
+      margin: 3%;
     }
 
-    .form{
-        width: 70%;
-        text-align: center;
-        margin: 5%;
-        margin-top: 3% ;
-
-        h2{
-            padding: 1%;
-        }
-        
-        .form-floating{
-            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
-           
-        }
-
+    .mapa{
+        border-radius: 5%;
     }
+  }
+
+  .form {
+    width: 70%;
+    text-align: center;
+    margin: 5%;
+    margin-top: 3%;
     
-    .btn{
-        margin: 2%;
-    
+
+    h2 {
+      padding: 1%;
     }
-    
+
+    .form-floating {
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
+        border-radius: 5%;
+    }
+  }
+
+  .btn {
+    margin: 2%;
+  }
 }
 
 /* footer */
 
 .footer {
-    background-color: rgb(18, 18, 18);
-    padding: 1% 5%;
-    width: 100%;
-    height: 13rem;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-
-    .links, .redes, .contact{
-        
-        h2 {
-            font-size: 1.6rem;
-            padding: 0% 0% ;
-        }
-
-        ul{
-            padding: 0;
-            width: 160px;
-            height: 90px;;
-            display: flex;
-            flex-direction: column;
-
-            .link_item {
-
-                list-style: none;
-                
-                a {
-                    color: #fff;
-                    display: flex;
-                    align-items: center;
-                    text-decoration: none;
-                    
-                    i {
-                        color: #84B868;
-                        padding: 3%;
-
-                    .bx {
-    
-                        margin-right: 6px;
-                        font-size: 1.2rem;
-                        }
-                    }   
-                }
-            }
-        
-        }
-
+  background-color: rgb(18, 18, 18);
+  width: 100%;
+  height: 13rem;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 1% 4% ;
+  .links,
+  .redes,
+  .contact {
+    h2 {
+        font-size: 1.6rem;
     }
 
-    .redes{
-        ul{
+    ul {
+        padding: 0;    
+        padding-top: 1rem;
+        width: 160px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        
+      .link_item {
+        list-style: none;
+
+        a {
             
-        }
-    }
+          color: #fff;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
 
-    .contacto {
-        ul {
+          i {
+            color: #84b868;
+            padding: 3%;
+
+            .bx {
+              margin-right: 6px;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  }
+  .contacto{
+    margin-right: 5rem;
+    text-align: center;
+
+    .boton_buscar{
+        margin-top: 1rem;
+        
+        .form_buscar{
+            display: flex;
+            gap: 5%;
+            input{
+                padding: 2%;
+                border-radius: 0.5rem;
+            }
+        }
+
+        .form_enviar{
+            padding: 1%;
+            background-color: black;
+            border-radius: 0.5rem;
+            color: #84b868;
+            border: 1px solid #84b868;
+            &:hover{
+                background-color: #84b868;
+                color: black;
+            }
         }
     }
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Flow+Rounded&family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Flow+Rounded&family=Nunito&family=Pacifico&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +7,25 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+h1 {
+  font-family: "bree serif";
+  text-align: center;
+  margin: 2%;
+}
+
+h2 {
+  font-family: "bree serif";
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "nunito";
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "nunito";
 }
 
 /* Navegacion */
@@ -24,27 +39,33 @@ body {
 
 .menu {
   background-color: #fff;
-  height: 3.5rem;
-  display: flex;
+  height: 3.8rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .menu .menu_check label i .bx {
   font-size: 2rem;
 }
+.menu .menu_check .logo {
+  width: 50px;
+}
 .menu .menu_check span {
-  font-size: 2.1rem;
+  font-size: 2rem;
+  font-family: "bree serif";
 }
 .menu .menu_nav {
   display: flex;
-  padding: 1%;
+  padding: 3%;
   font-size: 1.1rem;
-  margin-left: 30rem;
+  margin-left: 7rem;
 }
 .menu .menu_nav .nav_item {
   margin: 0 0.7rem;
   list-style: none;
 }
 .menu .menu_nav .nav_item :hover {
-  background-color: #84B868;
+  background-color: #84b868;
 }
 .menu .menu_nav .nav_item a {
   border-radius: 0.8rem;
@@ -56,15 +77,16 @@ body {
 /*Pagina de inicio*/
 .eslogan {
   color: rgba(255, 255, 255, 0.7254901961);
-  background-color: rgba(0, 0, 0, 0.473);
   z-index: 1;
   position: absolute;
-  top: 47%;
-  left: 16%;
-  display: flex;
-  font-size: 1.5rem;
+  top: 46%;
+  left: 15%;
+}
+.eslogan h1 {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.473);
   border-radius: 0.8rem;
-  padding: 1%;
 }
 
 .stock {
@@ -103,14 +125,16 @@ body {
   width: 100%;
   padding: 1%;
   display: flex;
-  background-color: rgb(18, 18, 18);
+  /* background-color: rgb(18, 18, 18); */
+  /* background-image: linear-gradient(600deg,  #84b868,#121212); */
+  background-image: linear-gradient(to right, #121212, #121212, #121212, #121212, #121212, #1c1d22, #212933, #233644, #135765, #007976, #3e9a75, #84b868);
 }
 .data .presentacion {
   padding: 0% 3% 0% 2%;
   text-align: center;
   color: #fff;
 }
-.data .presentacion h5 {
+.data .presentacion h4 {
   padding: 1%;
   padding-bottom: 5%;
 }
@@ -125,7 +149,7 @@ body {
 }
 
 /* Experiencia de clientes */
-.experiencias h5 {
+.experiencias h3 {
   text-align: center;
   padding-top: 1%;
 }
@@ -149,7 +173,7 @@ body {
   flex-direction: column;
 }
 .experiencias .exp_container .opinion_card .opinion_happy {
-  color: #84B868;
+  color: #84b868;
 }
 
 /*Pagina de catalogo */
@@ -179,17 +203,16 @@ body {
 .catalogo .barra_lateral .filtros #check_filter:checked ~ .filter {
   display: none;
 }
-.catalogo .barra_lateral .filtros .filter .categoria, .catalogo .barra_lateral .filtros .filter .estado, .catalogo .barra_lateral .filtros .filter .financiacion, .catalogo .barra_lateral .filtros .filter .combustible, .catalogo .barra_lateral .filtros .filter .traccion {
+.catalogo .barra_lateral .filtros .filter .categoria,
+.catalogo .barra_lateral .filtros .filter .estado,
+.catalogo .barra_lateral .filtros .filter .financiacion,
+.catalogo .barra_lateral .filtros .filter .combustible,
+.catalogo .barra_lateral .filtros .filter .traccion {
   padding: 3%;
   margin: 0.7rem;
 }
 .catalogo .vehiculos {
   grid-area: vehiculos;
-}
-.catalogo .vehiculos h1 {
-  text-align: center;
-  margin-top: 2%;
-  margin-left: 5%;
 }
 .catalogo .vehiculos .vehiculos_container {
   width: 100%;
@@ -208,6 +231,30 @@ body {
   margin-left: 35%;
 }
 
+/* Pagina de nosotros */
+.nosotros_bienvenida {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.nosotros_historia {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  text-align: center;
+}
+.nosotros_historia .historia_txt {
+  padding: 0 7%;
+}
+.nosotros_historia .historia_txt h4 {
+  font-size: 1.8rem;
+}
+.nosotros_historia .historia_img .img_grupo {
+  list-style: none;
+}
+.nosotros_historia .historia_img .img_grupo .img_foto img {
+  width: 25rem;
+}
+
 /*Pagina de contacto */
 .info {
   display: flex;
@@ -216,10 +263,13 @@ body {
   width: 100%;
   text-align: center;
   padding: 1%;
-  margin: 1%;
 }
-.info .ubicacion h2, .info .ubicacion h4 {
+.info .ubicacion h2,
+.info .ubicacion h4 {
   margin: 3%;
+}
+.info .ubicacion .mapa {
+  border-radius: 5%;
 }
 .info .form {
   width: 70%;
@@ -232,6 +282,7 @@ body {
 }
 .info .form .form-floating {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
+  border-radius: 5%;
 }
 .info .btn {
   margin: 2%;
@@ -240,41 +291,81 @@ body {
 /* footer */
 .footer {
   background-color: rgb(18, 18, 18);
-  padding: 1% 5%;
   width: 100%;
   height: 13rem;
   display: flex;
   justify-content: space-between;
   color: #fff;
+  padding: 1% 4%;
 }
-.footer .links h2, .footer .redes h2, .footer .contact h2 {
+.footer .links h2,
+.footer .redes h2,
+.footer .contact h2 {
   font-size: 1.6rem;
-  padding: 0% 0%;
 }
-.footer .links ul, .footer .redes ul, .footer .contact ul {
+.footer .links ul,
+.footer .redes ul,
+.footer .contact ul {
   padding: 0;
+  padding-top: 1rem;
   width: 160px;
   height: 90px;
   display: flex;
   flex-direction: column;
 }
-.footer .links ul .link_item, .footer .redes ul .link_item, .footer .contact ul .link_item {
+.footer .links ul .link_item,
+.footer .redes ul .link_item,
+.footer .contact ul .link_item {
   list-style: none;
 }
-.footer .links ul .link_item a, .footer .redes ul .link_item a, .footer .contact ul .link_item a {
+.footer .links ul .link_item a,
+.footer .redes ul .link_item a,
+.footer .contact ul .link_item a {
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.footer .links ul .link_item a i, .footer .redes ul .link_item a i, .footer .contact ul .link_item a i {
-  color: #84B868;
+.footer .links ul .link_item a i,
+.footer .redes ul .link_item a i,
+.footer .contact ul .link_item a i {
+  color: #84b868;
   padding: 3%;
 }
-.footer .links ul .link_item a i .bx, .footer .redes ul .link_item a i .bx, .footer .contact ul .link_item a i .bx {
+.footer .links ul .link_item a i .bx,
+.footer .redes ul .link_item a i .bx,
+.footer .contact ul .link_item a i .bx {
   margin-right: 6px;
   font-size: 1.2rem;
 }
+
+.contacto {
+  margin-right: 5rem;
+  text-align: center;
+}
+.contacto .boton_buscar {
+  margin-top: 1rem;
+}
+.contacto .boton_buscar .form_buscar {
+  display: flex;
+  gap: 5%;
+}
+.contacto .boton_buscar .form_buscar input {
+  padding: 2%;
+  border-radius: 0.5rem;
+}
+.contacto .boton_buscar .form_enviar {
+  padding: 1%;
+  background-color: black;
+  border-radius: 0.5rem;
+  color: #84b868;
+  border: 1px solid #84b868;
+}
+.contacto .boton_buscar .form_enviar:hover {
+  background-color: #84b868;
+  color: black;
+}
+
 @media (max-width: 1130px) {
   .vehiculos_container {
     grid-template-columns: repeat(2, 1fr);
