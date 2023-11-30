@@ -4,43 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concesionaria Time</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Encontra el auto que siempre soñaste, la moto ideal para viajar esta aca">
+    <!-- Metaa Keyword -->
+    <meta name="keywords" content="concesionaria, autos, motos, vintage, taller de autos, compra y venta, restauración, reliquias, Tortuguitas, Buenos Aires">
+    <!-- Link Boxicon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Css -->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    
+     <!-- Title pagina -->
+     <title>Inicio - Concesionaria Time</title>
 </head>
 
 
 <body>
-    
+
+
+  
+
+  
   <nav class="menu" >
 
-    <input type="checkbox" id="checkbox">
+    <!-- Menu hamb y Nombre del proyecto -->
+    <input type="checkbox" id="checkbox"/>
+  
+        <label for="checkbox">
+          <i class="bx bx-menu bx-sm"></i>
+        </label>
+     
+        <span>Concesionaria Time</span>
 
-    <div class="menu_check">
-    
-      <label for="checkbox">
-        <i class='bx bx-menu bx-sm'></i>
-      </label>
 
-      <span>Concesionaria Time</span>
-
-    </div>
+      <!-- Barra de navegacion -->
       
       <ul class="menu_nav">
 
         <li class="nav_item"> 
           <a href="index.html">Inicio</a>
-        </li>
+              </li>
 
         <li class="nav_item">
           <a href="./pages/catalogo.html">Catalogo</a>
-        </li>
+              </li>
 
         <li class="nav_item">
           <a href="./pages/nosotros.html">Nosotros</a>
-        </li>
+              </li>
 
         <li class="nav_item">
           <a href="./pages/merch.html">Merchandising</a>
@@ -50,8 +60,9 @@
           <a href="./pages/contacto.html">Contacto</a>
         </li>
 
-      </ul>
-  </nav>
+            </ul>
+            
+    </nav>
 
     <header class="header_container">
 
@@ -69,6 +80,7 @@
               <div class="carousel-item">
                 <img src="./img/carrusel4.jpg" class="d-block w-100" alt="auto">
               </div>
+              
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -92,85 +104,74 @@
       
         <section class="stock_container">
 
-       <!--  <div class="card" style="width: 18rem;">
-            <img src="./img/auto1.jpg" class="card-img-top" alt="auto1">
-            <div class="card-body">
-            <h5 class="card-title">Chevrolet Chevy</h5>
-            <p class="card-text">No pierdas la oportunidad de ser el orgulloso propietario de este clásic, contáctanos hoy mismo</p>
-            <a href="./pages/catalogo.html" class="btn btn-primary">Ver mas</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="./img/moto1.jpg" class="card-img-top" alt="auto1">
-            <div class="card-body">
-            <h5 class="card-title">Honda CB 500</h5>
-            <p class="card-text">
-                Esta moto es un tesoro de época que puede ser tuyo. Su diseño icónico y su rendimiento sólido la hacen destacar. </p>
-            <a href="./pages/catalogo.html" class="btn btn-primary">Ver mas</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="./img/auto2.jpg" class="card-img-top" alt="auto1">
-            <div class="card-body">
-            <h5 class="card-title">Ford F100</h5>
-            <p class="card-text">
-                 
-                Esta Ford F100 es perfecta para enfrentar cualquier desafío, trabajo o en tus aventuras en carretera.</p>
-            <a href="./pages/catalogo.html" class="btn btn-primary">Ver mas</a>
-            </div>
-        </div> -->
-
           <div class="stock_card">
+          
+            <img src="./img/auto1.jpg" alt="auto Chevrolet" class="card_img">
             
+            <h3>Chevrolet Chevy</h3>
 
-            <img src="./img/auto1.jpg" alt="auto 1" class="card_img">
-            
-            <h3>Auto 1</h3>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores libero nostrum quos repudiandae voluptatem ipsum nesciunt ad molestias accusamus, quod magni ducimus! Quis ratione veritatis incidunt accusamus quidem.
-            </p>
+            <ul class="card_txt">
+              <li class="card_item">Año: 1982</li>
+              <li class="card_item">Estado: Restaurado</li>
+              <li class="card_item">Combustible: Gasoil</li>
+              <li class="card_item">Traccion: Trasera</li>
+            </ul>
 
           </div>
 
           <div class="stock_card">
+          
+            <img src="./img/moto1.jpg" alt="moto honda" class="card_img">
             
-            <h3>Auto 1</h3>
+            <h3>Honda Cb</h3>
 
-            <img src="./img/auto1.jpg" alt="auto 1" class="card_img">
-            
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores libero nostrum quos repudiandae voluptatem ipsum nesciunt ad molestias accusamus, quod magni ducimus! Quis ratione veritatis incidunt accusamus quidem.
-            </p>
+            <ul class="card_txt">
+              <li class="card_item">Año: 1996</li>
+              <li class="card_item">Estado: Hecho a nueva</li>
+              <li class="card_item">Combustible: Nafta</li>
+              <li class="card_item">Cilindrada: 300cc</li>
+            </ul>
 
           </div>
 
           <div class="stock_card">
+          
+            <img src="./img/auto2.jpg" alt="camioneta ford" class="card_img">
             
-            <h3>Auto 1</h3>
+            <h3>Ford F100</h3>
 
-            <img src="./img/auto1.jpg" alt="auto 1" class="card_img">
-            
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores libero nostrum quos repudiandae voluptatem ipsum nesciunt ad molestias accusamus, quod magni ducimus! Quis ratione veritatis incidunt accusamus quidem.
-            </p>
+            <ul class="card_txt">
+              <li class="card_item">Año: 1980</li>
+              <li class="card_item">Estado: Original</li>
+              <li class="card_item">Combustible: Gasoil</li>
+              <li class="card_item">Traccion: Trasera</li>
+            </ul>
 
           </div>
 
           <div class="stock_card">
+          
+            <img src="./img/moto2.jpg" alt="moto indian Chief" class="card_img">
             
-            <h3>Auto 1</h3>
+            <h3>Indian Chief</h3>
 
-            <img src="./img/auto1.jpg" alt="auto 1" class="card_img">
-            
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae maiores libero nostrum quos repudiandae voluptatem ipsum nesciunt ad molestias accusamus, quod magni ducimus! Quis ratione veritatis incidunt accusamus quidem.
-            </p>
+            <ul class="card_txt">
+              <li class="card_item">Año: 1989</li>
+              <li class="card_item">Estado: Original</li>
+              <li class="card_item">Combustible: Nafta</li>
+              <li class="card_item">Cilindrada: 600cc</li>
+            </ul>
 
           </div>
+        
+        
       </section>
+
+      <div class="stock_boton">
+        <a href="./pages/catalogo.html">
+          <button class="form_enviar">Ver mas</button>
+        </a>
+      </div>
     </section>
    
     <section class="data">
@@ -182,7 +183,6 @@
             <p>
             En Concesionaria Time nos enorgullece ser el hogar de los automóviles y motocicletas clásicas más elegantes y atemporales. Sumergite en un mundo de belleza automotriz, donde la historia cobra vida a través de nuestros vehículos vintage meticulosamente seleccionados.
             Cada vehículo que ofrecemos cuenta con un pasado intrigante y un encanto inigualable.
-            <br>
             Nuestra dedicación a la calidad, la autenticidad , la buena atencion y la satisfacción de nuestros cliente es lo que nos distingue. 
             Prepárate para vivir un viaje en el tiempo a través de la elegancia de décadas pasadas, no lo dudes mas ¡Explora nuestro inventario ahora y descubri el clásico de tus sueños!.
             </p>
@@ -190,7 +190,7 @@
 
         <div class="ubicacion">
 
-            <em><h5>Nuestra ubicacion:</h5></em>
+            <em><h4>Nuestra ubicacion:</h4></em>
 
             <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d8359.080053362903!2d-58.724360933399595!3d-34.45514977647987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scar%20one!5e0!3m2!1ses-419!2sar!4v1699413097026!5m2!1ses-419!2sar" width="480" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
@@ -200,9 +200,10 @@
 
     <section class="experiencias">
 
-      <h3>Experiencias de nuestros clientes:</h3>
+      <h4>Experiencias de nuestros clientes:</h4>
 
       <section class="exp_container"> 
+
         <div class="opinion_card">
             
            <p class="opinion_bubble" >
@@ -290,65 +291,66 @@
   <script src="./js/bootstrap.js"></script>
 </body>
 
-  <footer>
-    <section class="footer">
-      <section class="links">
-        <h2>Concesionaria Time</h2>
-        <ul>
-          <li class="link_item"><a href="./index.html"> <i class='bx bx-home-alt-2'></i> Inicio</a></li>
+<footer>
+  <section class="footer">
+    <section class="links">
+      <h2>Concesionaria Time</h2>
+      <ul>
+        <li class="link_item"><a href="./index.html"> <i class='bx bx-home-alt-2'></i> Inicio</a></li>
 
-          <li class="link_item"><a href="./pages/catalogo.html"> <i class='bx bx-car'></i> Catalogo</a></li>
+        <li class="link_item"><a href="./pages/catalogo.html"> <i class='bx bx-car'></i> Catalogo</a></li>
 
-          <li class="link_item"><a href="./pages/nosotros.html"> <i class='bx bx-user'></i></i> Nosotros</a></li>
+        <li class="link_item"><a href="./pages/nosotros.html"> <i class='bx bx-user'></i></i> Nosotros</a></li>
 
-          <li class="link_item"><a href="./pages/merch.html"> <i class='bx bx-shopping-bag'></i>Merchandising</a></li>
+        <li class="link_item"><a href="./pages/merch.html"> <i class='bx bx-shopping-bag'></i>Merchandising</a></li>
 
-          <li class="link_item"><a href="./pages/contacto.html"> <i class='bx bx-chat'></i>Contacto</a></li>
+        <li class="link_item"><a href="./pages/contacto.html"> <i class='bx bx-chat'></i>Contacto</a></li>
 
-        </ul>
-      </section>
-
-      <section class="redes">
-        <h2>Seguinos</h2>
-        <ul>
-
-          <li class="link_item">
-            <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i>Instagram</a>
-          </li>
-
-          <li class="link_item">
-            <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i>Facebook</a>
-          </li>
-
-          <li class="link_item">
-            <a href="https://www.youtube.com/"><i class="bx bxl-youtube"></i>Youtube</a>
-          </li>
-
-          <li class="link_item">
-            <a href="https://www.google.com/maps/search/car+one/@-34.4809597,-58.6682848,12z?hl=es-419&gl=AR"><i class='bx bxs-map' ></i> Google Maps</a>
-          </li>
-        </ul>
-      </section>
-      <section class="contact">
-
-        <h2>Contacto</h2>
-
-        <section class="contacto">
-          <ul>
-            <li class="link_item"> <a href="#"><i class='bx bx-phone'></i>
-              0800-156-TIME</a>
-            </li>
-            <li class="link_item"> <a href="#"> 
-              <i class='bx bx-envelope' ></i>ventas@concesionariatime.com</a>
-            </li>
-            <div class="boton_buscar">
-              <form class="form_buscar">
-                <input type="search" placeholder="Tu busqueda">
-                <button class="form_enviar">Buscar</button>
-              </form>
-            </div>
-          </ul>
-        </section>
+      </ul>
     </section>
-  </footer>
+
+    <section class="redes">
+      <h2>Seguinos</h2>
+      <ul>
+
+        <li class="link_item">
+          <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i>Instagram</a>
+        </li>
+
+        <li class="link_item">
+          <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i>Facebook</a>
+        </li>
+
+        <li class="link_item">
+          <a href="https://www.youtube.com/"><i class="bx bxl-youtube"></i>Youtube</a>
+        </li>
+
+        <li class="link_item">
+          <a href="https://www.google.com/maps/search/car+one/@-34.4809597,-58.6682848,12z?hl=es-419&gl=AR"><i class='bx bxs-map' ></i> Google Maps</a>
+        </li>
+      </ul>
+    </section>
+    <section class="contact">
+
+      <h2>Contacto</h2>
+
+      <section class="contacto">
+        <ul>
+          <li class="link_item"> <a href="#"><i class='bx bx-phone'></i>
+            0800-156-TIME</a>
+          </li>
+          <li class="link_item"> <a href="#"> 
+            <i class='bx bx-envelope' ></i>ventas@concesionariatime.com</a>
+          </li>
+
+          <div class="boton_buscar">
+            <form class="form_buscar">
+              <input type="search" placeholder="Tu busqueda">
+              <button class="form_enviar">Buscar</button>
+            </form>
+          </div>
+        </ul>
+      </section>
+  </section>
+</footer>
 </html>

@@ -1,118 +1,259 @@
-@media (max-width:1130px)
-{
-    .vehiculos_container{
-        grid-template-columns: repeat(2 , 1fr);
-        margin-left: 15%;
-    }
-    .exp_container{
-        grid-template-columns: repeat(6, 1fr);
-        overflow-x: scroll;
-        gap: 1rem; 
-    }
+@media (max-width: 1220px) {
+  .eslogan {
+    top: 16%;
+    transform: translate(-5%);
+  }
+
+  .stock_card {
+    width: 19rem;
+  }
 }
 
+@media (max-width: 1160px) {
+  .stock {
+    .stock_container {
+      transform: translate(5%);
+      grid-template-columns: repeat(2, 1fr);
+      .stock_card {
+        width: 22rem;
+      }
+    }
+  }
 
-@media (max-width:992px)
-{
-    .eslogan {
-        h1{
-        top: 20%;
-        
+  .stock_card {
+    width: 18rem;
+  }
+
+  .experiencias {
+    .exp_container {
+      grid-template-columns: repeat(6, 1fr);
+      overflow-x: scroll;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .stock_card {
+    width: 16.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .eslogan {
+    top: 12%;
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+  .data {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mapa {
+    width: 400px;
+    height: 200px;
+  }
+
+  .stock_card {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .catalogo {
+    .vehiculos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .footer {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 905px) {
+  .menu {
+    .menu_nav {
+      padding-left: 0;
+      margin: 0;
+    }
+  }
+
+  .catalogo {
+    .numeracion {
+      margin-top: 5%;
+      margin-left: 20%;
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .eslogan {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  .nosotros_historia {
+    .historia_img {
+      .img_grupo {
+        .img_foto {
+          img {
+            width: 20rem;
+          }
         }
+      }
     }
-    .stock_container{
-        overflow-x: scroll;
-        gap: 2%;
-    }
+  }
 
-    .data{
-        flex-direction: column;
-        text-align: center;
-    }
+  .info {
+    flex-direction: column;
+    transform: translate(20%);
+  }
 
-    .mapa{
-        width: 400px;
-        height: 200px;
-    }
-
-    
+  .form {
+    margin-left: 5%;
+    width: 80%;
+  }
 }
 
-@media (max-width:890px)
-{
-    .icono label{
-        display: block;
-
-    }
-    
-    .icono label i.bx {
-    
-        font-size: 3rem;
+@media (max-width: 768px) {
+  .menu {
+    label {
+      margin: 3% 2%;
+      display: block;
     }
 
-    .filter{
-        display: none;
+    .menu_nav {
+      display: none;
     }
+  }
 
-    #check_filter:checked~.filter{
-        display: inline-block;
-        width: 100%;
-        height: 100%;
+  .menu #checkbox:checked ~ .menu_nav {
+    background-color: #7ab75ac1;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    padding: 2%;
+  }
+
+  .eslogan {
+    top: 10%;
+  }
+
+  .catalogo {
+    grid-template-columns: 0.2fr 2fr;
+  }
+
+  .filtros {
+    .filter {
+      display: none;
     }
+  }
 
-    .vehiculos{
-        margin-top: 5% ;
+  #check_filter:checked ~ .filter {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .catalogo {
+    .numeracion {
+      margin-top: 10%;
     }
+  }
 
-    .info{
-        flex-direction: column;
-    }
+  .nosotros_historia {
+    display: flex;
+    flex-direction: column;
 
-    .form{
-        margin-left: 10%;
-        width: 80%;
-    }
-}
-
-@media (max-width:768px)
-{
-    .footer{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }
-
-    .footer ul{
-        
-        margin: 0;
-    }
-
-    
-}
-
-@media (max-width:576px)
-{
-    .eslogan h1{
-        top: 20%;
-
-    }
-
-    .stock_container{
-        gap: 3%;
-    }
-
-    .mapa{
-        width: 250px;
-        height: 100px;
-    }
-
-    .contacto ul .link_item{
+    .historia_img {
+      .img_grupo {
         display: flex;
-        flex-direction: column;
-
+        flex-direction: row;
+        overflow-x: scroll;
+        .img_foto {
+          img {
+            width: 15rem;
+          }
+        }
+      }
     }
-
-    .contacto .d-flex{
-        flex-direction: column;
-        width: 60%;
+  }
+  .footer {
+    .links {
+      display: none;
     }
+    .contact {
+      .contacto {
+        .boton_buscar {
+          .form_buscar {
+            input {
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .eslogan {
+    margin-left: 2%;
+    h1 {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .stock {
+    .stock_container {
+      .stock_card {
+        width: 14rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .eslogan {
+    top: 8%;
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+  .mapa {
+    width: 350px;
+    height: 150px;
+  }
+
+  .contacto ul .link_item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacto .d-flex {
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .stock_card {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .eslogan {
+    top: 8% h1 {
+      font-size: 0.8rem;
+    }
+  }
 }

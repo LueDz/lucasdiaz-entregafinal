@@ -28,37 +28,76 @@ body {
   font-family: "nunito";
 }
 
-/* Navegacion */
-#checkbox {
-  display: none;
+.banner {
+  width: 100%;
 }
 
-#checkbox:checked ~ .menu_nav {
+.mapa {
+  border-radius: 5%;
+}
+
+.form_enviar {
+  padding: 5px 10px;
+  background-color: #84b868;
+  border-radius: 0.5rem;
+  color: black;
+  border: 1.5px solid black;
+  transition: all 0.5s;
+}
+.form_enviar:hover {
+  background-color: black;
+  color: #84b868;
+  transition: all 0.5s;
+}
+
+.stock_card {
+  width: 20rem;
+  border-radius: 1rem;
+  border: solid 1px rgba(0, 0, 0, 0.174);
+  margin-bottom: 5%;
+  overflow: auto;
+  text-align: center;
+}
+.stock_card h3 {
+  margin: 2%;
+}
+.stock_card .card_img {
+  width: 100%;
+}
+.stock_card .card_txt {
+  list-style: none;
+  transform: translate(-6%);
+}
+
+/* Navegacion */
+#checkbox,
+.menu label {
   display: none;
 }
 
 .menu {
-  background-color: #fff;
   height: 3.8rem;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
 }
-.menu .menu_check label i .bx {
+.menu label {
+  display: none;
+}
+.menu label i .bx {
   font-size: 2rem;
 }
-.menu .menu_check .logo {
-  width: 50px;
-}
-.menu .menu_check span {
+.menu span {
+  padding-left: 2%;
+  margin-top: 1%;
   font-size: 2rem;
   font-family: "bree serif";
 }
 .menu .menu_nav {
   display: flex;
+  width: 50%;
   padding: 3%;
   font-size: 1.1rem;
-  margin-left: 7rem;
+  margin-left: 5rem;
 }
 .menu .menu_nav .nav_item {
   margin: 0 0.7rem;
@@ -66,12 +105,13 @@ body {
 }
 .menu .menu_nav .nav_item :hover {
   background-color: #84b868;
+  transition: all 1s;
 }
 .menu .menu_nav .nav_item a {
-  border-radius: 0.8rem;
+  border-radius: 5rem;
   text-decoration: none;
   color: black;
-  padding: 5% 8%;
+  padding: 6%;
 }
 
 /*Pagina de inicio*/
@@ -86,7 +126,7 @@ body {
   width: 100%;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.473);
-  border-radius: 0.8rem;
+  border-radius: 1rem;
 }
 
 .stock {
@@ -102,22 +142,15 @@ body {
 }
 .stock .stock_container {
   width: 100%;
+  margin-left: 1%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 .stock .stock_container .stock_card {
-  width: 18rem;
-  background-color: white;
-  border-radius: 1rem;
+  width: 17rem;
+}
+.stock .stock_boton {
   text-align: center;
-  border: solid 1px rgb(0, 0, 0);
-}
-.stock .stock_container .stock_card .card_img {
-  width: 100%;
-  border-radius: 1rem;
-}
-.stock .stock_container .stock_card p {
-  background-color: #fff;
 }
 
 /* Informacion de la concesionaria */
@@ -125,8 +158,6 @@ body {
   width: 100%;
   padding: 1%;
   display: flex;
-  /* background-color: rgb(18, 18, 18); */
-  /* background-image: linear-gradient(600deg,  #84b868,#121212); */
   background-image: linear-gradient(to right, #121212, #121212, #121212, #121212, #121212, #1c1d22, #212933, #233644, #135765, #007976, #3e9a75, #84b868);
 }
 .data .presentacion {
@@ -142,14 +173,14 @@ body {
   padding-right: 1%;
   padding-bottom: 1%;
 }
-.data .ubicacion h5 {
+.data .ubicacion h4 {
   text-align: center;
   color: #fff;
   padding: 1%;
 }
 
 /* Experiencia de clientes */
-.experiencias h3 {
+.experiencias h4 {
   text-align: center;
   padding-top: 1%;
 }
@@ -164,7 +195,7 @@ body {
 .experiencias .exp_container .opinion_card {
   width: 350px;
   background-color: #ebebeb;
-  border-radius: 10px;
+  border-radius: 1.25rem;
   padding: 1%;
 }
 .experiencias .exp_container .opinion_card .opinion_bubble {
@@ -179,15 +210,17 @@ body {
 /*Pagina de catalogo */
 .catalogo {
   display: grid;
-  grid-template-columns: 13% 80%;
+  grid-template-columns: 0.5fr 1.5fr;
   grid-template-rows: 0fr auto 0.1fr;
   grid-template-areas: "barra vehiculos" "barra heviculos" "barra numeracion";
   /* Barra lateral de filtros */
   /* Grilla de vehiculos */
   /* Pie numerado de paginas */
 }
+.catalogo #check_filter {
+  display: none;
+}
 .catalogo .barra_lateral {
-  margin-top: 50%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -197,11 +230,8 @@ body {
 .catalogo .barra_lateral .filtros {
   margin: 10%;
 }
-.catalogo .barra_lateral .filtros #check_filter {
-  display: none;
-}
-.catalogo .barra_lateral .filtros #check_filter:checked ~ .filter {
-  display: none;
+.catalogo .barra_lateral .filtros .icono label i {
+  font-size: 2rem;
 }
 .catalogo .barra_lateral .filtros .filter .categoria,
 .catalogo .barra_lateral .filtros .filter .estado,
@@ -209,25 +239,20 @@ body {
 .catalogo .barra_lateral .filtros .filter .combustible,
 .catalogo .barra_lateral .filtros .filter .traccion {
   padding: 3%;
-  margin: 0.7rem;
+  margin: 0.5rem;
 }
 .catalogo .vehiculos {
   grid-area: vehiculos;
-}
-.catalogo .vehiculos .vehiculos_container {
   width: 100%;
-  height: 100%;
   margin: 1%;
   margin-left: 5%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-.catalogo .vehiculos .vehiculos_container .card {
-  margin: 1rem;
+  gap: 0.5rem;
 }
 .catalogo .numeracion {
   grid-area: numeracion;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   margin-left: 35%;
 }
 
@@ -239,7 +264,7 @@ body {
 
 .nosotros_historia {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 2fr 2fr;
   text-align: center;
 }
 .nosotros_historia .historia_txt {
@@ -248,11 +273,18 @@ body {
 .nosotros_historia .historia_txt h4 {
   font-size: 1.8rem;
 }
+.nosotros_historia .historia_img {
+  margin-top: 3rem;
+}
 .nosotros_historia .historia_img .img_grupo {
   list-style: none;
 }
+.nosotros_historia .historia_img .img_grupo .img_foto {
+  margin: 2%;
+}
 .nosotros_historia .historia_img .img_grupo .img_foto img {
   width: 25rem;
+  border-radius: 1rem;
 }
 
 /*Pagina de contacto */
@@ -260,7 +292,7 @@ body {
   display: flex;
 }
 .info .ubicacion {
-  width: 100%;
+  width: 60%;
   text-align: center;
   padding: 1%;
 }
@@ -268,21 +300,19 @@ body {
 .info .ubicacion h4 {
   margin: 3%;
 }
-.info .ubicacion .mapa {
-  border-radius: 5%;
-}
 .info .form {
-  width: 70%;
+  width: 50%;
   text-align: center;
-  margin: 5%;
-  margin-top: 3%;
+  padding: 1%;
+  margin-right: 4%;
 }
 .info .form h2 {
-  padding: 1%;
+  margin: 3%;
+  margin-bottom: 7%;
 }
 .info .form .form-floating {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
-  border-radius: 5%;
+  border-radius: 1rem;
 }
 .info .btn {
   margin: 2%;
@@ -354,36 +384,56 @@ body {
   padding: 2%;
   border-radius: 0.5rem;
 }
-.contacto .boton_buscar .form_enviar {
+.contacto .boton_buscar .form_buscar .form_enviar {
   padding: 1%;
   background-color: black;
   border-radius: 0.5rem;
   color: #84b868;
   border: 1px solid #84b868;
+  transition: all 1s;
 }
-.contacto .boton_buscar .form_enviar:hover {
+.contacto .boton_buscar .form_buscar .form_enviar:hover {
   background-color: #84b868;
   color: black;
+  transition: all 1s;
 }
 
-@media (max-width: 1130px) {
-  .vehiculos_container {
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 15%;
+@media (max-width: 1220px) {
+  .eslogan {
+    top: 16%;
+    transform: translate(-5%);
   }
-  .exp_container {
+  .stock_card {
+    width: 19rem;
+  }
+}
+@media (max-width: 1160px) {
+  .stock .stock_container {
+    transform: translate(5%);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stock .stock_container .stock_card {
+    width: 22rem;
+  }
+  .stock_card {
+    width: 18rem;
+  }
+  .experiencias .exp_container {
     grid-template-columns: repeat(6, 1fr);
     overflow-x: scroll;
-    gap: 1rem;
+  }
+}
+@media (max-width: 1100px) {
+  .stock_card {
+    width: 16.5rem;
   }
 }
 @media (max-width: 992px) {
-  .eslogan h1 {
-    top: 20%;
+  .eslogan {
+    top: 12%;
   }
-  .stock_container {
-    overflow-x: scroll;
-    gap: 2%;
+  .eslogan h1 {
+    font-size: 1.8em;
   }
   .data {
     flex-direction: column;
@@ -393,15 +443,71 @@ body {
     width: 400px;
     height: 200px;
   }
+  .stock_card {
+    width: 15rem;
+  }
+}
+@media (max-width: 950px) {
+  .catalogo .vehiculos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 905px) {
+  .menu .menu_nav {
+    padding-left: 0;
+    margin: 0;
+  }
+  .catalogo .numeracion {
+    margin-top: 5%;
+    margin-left: 20%;
+  }
 }
 @media (max-width: 890px) {
-  .icono label {
+  .eslogan h1 {
+    font-size: 1.5rem;
+  }
+  .nosotros_historia .historia_img .img_grupo .img_foto img {
+    width: 20rem;
+  }
+  .info {
+    flex-direction: column;
+    transform: translate(20%);
+  }
+  .form {
+    margin-left: 5%;
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .menu label {
+    margin: 3% 2%;
     display: block;
   }
-  .icono label i.bx {
-    font-size: 3rem;
+  .menu .menu_nav {
+    display: none;
   }
-  .filter {
+  .menu #checkbox:checked ~ .menu_nav {
+    background-color: rgba(122, 183, 90, 0.7568627451);
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    padding: 2%;
+  }
+  .eslogan {
+    top: 10%;
+  }
+  .catalogo {
+    grid-template-columns: 0.2fr 2fr;
+  }
+  .filtros .filter {
     display: none;
   }
   #check_filter:checked ~ .filter {
@@ -409,36 +515,51 @@ body {
     width: 100%;
     height: 100%;
   }
-  .vehiculos {
-    margin-top: 5%;
+  .catalogo .numeracion {
+    margin-top: 10%;
   }
-  .info {
+  .nosotros_historia {
+    display: flex;
     flex-direction: column;
   }
-  .form {
-    margin-left: 10%;
-    width: 80%;
+  .nosotros_historia .historia_img .img_grupo {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+  }
+  .nosotros_historia .historia_img .img_grupo .img_foto img {
+    width: 15rem;
+  }
+  .footer .links {
+    display: none;
+  }
+  .footer .contact .contacto .boton_buscar .form_buscar input {
+    display: flex;
   }
 }
-@media (max-width: 768px) {
-  .footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 700px) {
+  .eslogan {
+    margin-left: 2%;
   }
-  .footer ul {
-    margin: 0;
+  .eslogan h1 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 680px) {
+  .stock .stock_container .stock_card {
+    width: 14rem;
   }
 }
 @media (max-width: 576px) {
-  .eslogan h1 {
-    top: 20%;
+  .eslogan {
+    top: 8%;
   }
-  .stock_container {
-    gap: 3%;
+  .eslogan h1 {
+    font-size: 1rem;
   }
   .mapa {
-    width: 250px;
-    height: 100px;
+    width: 350px;
+    height: 150px;
   }
   .contacto ul .link_item {
     display: flex;
@@ -447,6 +568,15 @@ body {
   .contacto .d-flex {
     flex-direction: column;
     width: 60%;
+  }
+  .stock_card {
+    width: 12rem;
+  }
+}
+@media (max-width: 500px) {
+  .eslogan {
+    top: 8% h1;
+    top-font-size: 0.8rem;
   }
 }
 

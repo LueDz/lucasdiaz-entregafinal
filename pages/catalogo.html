@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concesionaria Time</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Observa nuestro catalogo y encontra el auto que siempre soñaste o la moto ideal para viajar">
+    <!-- Metaa Keyword -->
+    <meta name="keywords" content="concesionaria, autos, motos, vintage, taller de autos, compra y venta, restauración, reliquias, Tortuguitas, Buenos Aires, catalogo, stock, disponibles">
+    <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Css -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Title pagina -->
+    <title>Catalogo - Concesionaria Time</title>
 </head>
 <body>
 
+  <!-- Menu hamb y nombre del proyecto -->
+
   <nav class="menu">
-    <input type="checkbox" id="checkbox" />
-
-    <div class="menu_check">
-      <label for="checkbox">
-        <i class="bx bx-menu bx-sm"></i>
-      </label>
-
-      <span>Concesionaria Time</span>
-    </div>
+    <input type="checkbox" id="checkbox"/>
+  
+        <label for="checkbox">
+          <i class="bx bx-menu bx-sm"></i>
+        </label>
+     
+        <span>Concesionaria Time</span>
+      
+  <!-- Barra de navegacion -->
+    
 
     <ul class="menu_nav">
       <li class="nav_item">
@@ -45,7 +55,7 @@
     </ul>
   </nav>
   <header>
-      <img src="../img/key.jpg" alt="" width="100%" class="banner">
+      <img src="../img/key.jpg" alt="foto recibiendo una llave" class="banner">
 
       <h1>Nuestro Catalogo</h1>
   </header>
@@ -67,7 +77,7 @@
           <div class="filter">
             <div class="categoria">
               <h3>Filtros</h3> 
-              <label  label for="tipos"><h5>Categoria</h5></label> 
+              <label for="tipos"><h5>Categoria</h5></label> 
               <select name="tipos" id="tipos">
               
               <option value="opcion">Elegir una opcion</option>
@@ -138,10 +148,12 @@
               </select>
             
             </div>
-
-            <br>
           
-            <a href="#"><button type="button" class="btn btn-outline-primary">Buscar</button></a>
+            <a href="#"><div class="boton_buscar">
+          
+              <button class="form_enviar" type="submit">Buscar</button>
+            </form>
+          </div></a>
         </div>
 
   
@@ -149,129 +161,185 @@
       
       <section class="vehiculos">
         
-        <div class="vehiculos_container">
+        <div class="stock_card">
+          
+          <img src="../img/auto1.jpg" alt="auto Chevrolet" class="card_img">
+          
+          <h3>Chevrolet Chevy</h3>
 
-            <div class="card" style="width: 18rem;">
-              <img src="../img/auto1.jpg" class="card-img-top" alt="auto1">
-              <div class="card-body">
-              <h5 class="card-title">Chevrolet Chevy</h5>
-              <p class="card-text">No pierdas la oportunidad de ser el orgulloso propietario de este clásic, contáctanos hoy mismo.</p>
-              <a href="#  " class="btn btn-primary">Ver mas</a>
-              </div>
-            </div>
+          <ul class="card_txt">
+            <li class="card_item">Año: 1982</li>
+            <li class="card_item">Estado: Restaurado</li>
+            <li class="card_item">Combustible: Gasoil</li>
+            <li class="card_item">Traccion: Trasera</li>
+          </ul>
 
-            <div class="card" style="width: 18rem;">
-                <img src="../img/auto2.jpg" class="card-img-top" alt="auto2">
-                <div class="card-body">
-                <h5 class="card-title">Ford F100</h5>
-                <p class="card-text">
-                  Esta Ford F100 es perfecta para enfrentar cualquier desafío, trabajo o en tus aventuras en carretera. </p>
-                <a href="./catalogo.html" class="btn btn-primary">Ver mas</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/auto3.jpg" class="card-img-top" alt="auto3">
-                <div class="card-body">
-                <h5 class="card-title">Volkswagen Kombi</h5>
-                <p class="card-text">
-                  La camioneta hippie, pan lactal o como quieras llamar a esta camioneta pionera en mini van.  
-                  </p>
-                <a href="./catalogo.html" class="btn btn-primary">Ver mas</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-              <img src="../img/auto4.jpg" class="card-img-top" alt="auto1">
-              <div class="card-body">
-              <h5 class="card-title">Volkswagen Golf</h5>
-              <p class="card-text">Este icónico hatchback ha envejecido como el buen vino, manteniendo su atractivo juvenil y su dinamismo a lo largo de los años.</p>
-              <a href="./catalogo.html" class="btn btn-primary">Ver mas</a>
-              </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/auto5.jpg" class="card-img-top" alt="auto5">
-                <div class="card-body">
-              <h5 class="card-title">Opala SS</h5>
-              <p class="card-text">
-                Ya sea que busques una joya para tu colección de autos clásicos o desees revivir la emoción de los años noventa, nuestro Opala es la elección perfecta.
-                  </p>
-              <a href="./catalogo.html" class="btn btn-primary">Ver mas</a>
-              </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/auto6.jpg" class="card-img-top" alt="auto1">
-                <div class="card-body">
-                <h5 class="card-title">Ford Mustang</h5>
-                <p class="card-text">
-                    
-                  ¡Experimenta la potencia y el estilo legendarios con nuestro Ford Mustang 1990, un clásico que mezcla el rugido del motor con la elegancia atemporal!</p>
-                <a href="./catalogo.html" class="btn btn-primary">Ver mas</a>
-                </div>
-              </div>
-
-            <div class="card" style="width: 18rem;">
-              <img src="../img/moto1.jpg" class="card-img-top" alt="moto1">
-              <div class="card-body">
-              <h5 class="card-title">Honda CB 500</h5>
-              <p class="card-text">Desde el manillar hasta el escape, cada detalle de esta moto respira autenticidad. Esun tesoro de época que puede ser tuyo, wu diseño icónico y su rendimiento sólido la hacen destacar.</p>
-              <a href="./catalogo.html" class="btn btn-primary">Ver mas</a>
-            </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/moto2.jpg" class="card-img-top" alt="moto2">
-                <div class="card-body">
-                <h5 class="card-title">Indian Chief</h5>
-                <p class="card-text">
-                  Seas un apasionado de las motocicletas vintage o simplemente busques algo único, esta moto restaurada es una inversión que combina estilo, historia y rendimiento. </p>
-                <a href="./catalogo.html" class="btn btn-primary">Ver mas</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/moto3.jpg" class="card-img-top" alt="moto3">
-                <div class="card-body">
-                <h5 class="card-title">Vespa</h5>
-                <p class="card-text">
-                    
-                  Esta joya del pasado ha sido meticulosamente revitalizada para ofrecer una experiencia única de conducción que combina el encanto clásico con un rendimiento moderno.</p>
-                <a href="./catalogo.html" class="btn btn-primary">Ver mas</a>
-                </div>
-              </div>
-
-            <div class="card" style="width: 18rem;">
-              <img src="../img/moto4.jpg" class="card-img-top" alt="moto4">
-              <div class="card-body">
-              <h5 class="card-title">Kawasaki H1</h5>
-              <p class="card-text">Si buscas más que una simple moto, si anhelas la experiencia de poseer un pedazo tangible de historia sobre ruedas, entonces esta moto japonesa es la elección perfecta.</p>
-              <a href="./catalogo.html" class="btn btn-primary">Ver mas</a>
-              </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/moto5.jpg" class="card-img-top" alt="moto5">
-                <div class="card-body">
-                <h5 class="card-title">Harley Davidson</h5>
-                <p class="card-text">
-                  Esta joya vintage no es solo una moto, es una obra de arte en movimiento que te transportará a una época donde la elegancia y la simplicidad se combinaban para crear máquinas icónicas.</p>
-                <a href="./catalogo.html" class="btn btn-primary">Ver mas</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/moto6.jpg" class="card-img-top" alt="moto6">
-                <div class="card-body">
-                <h5 class="card-title">Ducati</h5>
-                <p class="card-text">
-                    
-                  No solo estás comprando una moto, estás adquiriendo un pasaje directo al pasado. ¡Haz tuya esta joya vintage y revive la emoción de las motos clásicas!</p>
-                <a href="./catalogo.html" class="btn btn-primary">Ver mas</a>
-                </div>
-            </div>
         </div>
+
+        <div class="stock_card">
+          
+          <img src="../img/auto2.jpg" alt="camioneta ford" class="card_img">
+          
+          <h3>Ford F100</h3>
+
+          <ul class="card_txt">
+            <li class="card_item">Año: 1980</li>
+            <li class="card_item">Estado: Original</li>
+            <li class="card_item">Combustible: Gasoil</li>
+            <li class="card_item">Traccion: Trasera</li>
+          </ul>
+
+        </div>
+
+        <div class="stock_card">
+          
+          <img src="../img/auto3.jpg" alt="camioneta Volkswagen" class="card_img">
+          
+          <h3>Volkswagen Kombi</h3>
+
+          <ul class="card_txt">
+            <li class="card_item">Año: 1918</li>
+            <li class="card_item">Estado: Hecha a nueva</li>
+            <li class="card_item">Combustible: Nafta</li>
+            <li class="card_item">Traccion: Delantera</li>
+          </ul>
+
+        </div>
+
+        <div class="stock_card">
+          
+          <img src="../img/auto4.jpg" alt="auto Volkswagen" class="card_img">
+          
+          <h3>Volkswagen Golf</h3>
+
+          <ul class="card_txt">
+            <li class="card_item">Año: 1992</li>
+            <li class="card_item">Estado: Hecho a nuevo</li>
+            <li class="card_item">Combustible: Nafta</li>
+            <li class="card_item">Traccion: Delantera</li>
+          </ul>
+
+        </div>
+
+        <div class="stock_card">
+          
+          <img src="../img/auto5.jpg" alt="auto Opala" class="card_img">
+          
+          <h3>Opala SS</h3>
+
+          <ul class="card_txt">
+            <li class="card_item">Año: 1988</li>
+            <li class="card_item">Estado: Restaurado</li>
+            <li class="card_item">Combustible: Gasoil</li>
+            <li class="card_item">Traccion: Trasera</li>
+          </ul>
+
+        </div>
+
+          <div class="stock_card">
+          
+            <img src="../img/auto6.jpg" alt="auto ford" class="card_img">
+            
+            <h3>Ford Mustang</h3>
+  
+            <ul class="card_txt">
+              <li class="card_item">Año: 1989</li>
+              <li class="card_item">Estado: Original</li>
+              <li class="card_item">Combustible: Nafta</li>
+              <li class="card_item">Traccion: Trasera</li>
+            </ul>
+  
+          </div>
+
+          <div class="stock_card">
+          
+            <img src="../img/moto1.jpg" alt="moto honda" class="card_img">
+            
+            <h3>Honda Cb</h3>
+
+            <ul class="card_txt">
+              <li class="card_item">Año: 1992 </li>
+              <li class="card_item">Estado: Hecho a nueva</li>
+              <li class="card_item">Combustible: Nafta</li>
+              <li class="card_item">Cilindrada: 300cc</li>
+            </ul>
+
+          </div>
+
+          <div class="stock_card">
+          
+            <img src="../img/moto2.jpg" alt="moto indian Chief" class="card_img">
+            
+            <h3>Indian Chief</h3>
+
+            <ul class="card_txt">
+              <li class="card_item">Año: 1989</li>
+              <li class="card_item">Estado: Original</li>
+              <li class="card_item">Combustible: Nafta</li>
+              <li class="card_item">Cilindrada: 600cc</li>
+            </ul>
+
+          </div>
+        
+          <div class="stock_card">
+          
+            <img src="../img/moto3.jpg" alt="moto vespa" class="card_img">
+            
+            <h3>Vespa</h3>
+
+            <ul class="card_txt">
+              <li class="card_item">Año: 1997</li>
+              <li class="card_item">Estado: Original</li>
+              <li class="card_item">Combustible: Nafta</li>
+              <li class="card_item">Cilindrada: 300cc</li>
+            </ul>
+
+          </div>
+
+          <div class="stock_card">
+          
+            <img src="../img/moto4.jpg" alt="moto kawasaki" class="card_img">
+            
+            <h3>Kawasaki h1</h3>
+
+            <ul class="card_txt">
+              <li class="card_item">Año: 2000</li>
+              <li class="card_item">Estado: Original</li>
+              <li class="card_item">Combustible: Nafta</li>
+              <li class="card_item">Cilindrada: 150cc</li>
+            </ul>
+
+          </div>
+
+          <div class="stock_card">
+          
+            <img src="../img/moto5.jpg" alt="moto Harley Davidson" class="card_img">
+            
+            <h3>Harley Davidson</h3>
+
+            <ul class="card_txt">
+              <li class="card_item">Año: 1988</li>
+              <li class="card_item">Estado: Original</li>
+              <li class="card_item">Combustible: Nafta</li>
+              <li class="card_item">Cilindrada: 1000cc</li>
+            </ul>
+
+          </div>
+
+          <div class="stock_card">
+          
+            <img src="../img/moto6.jpg" alt="moto ducati" class="card_img">
+            
+            <h3>Ducati</h3>
+
+            <ul class="card_txt">
+              <li class="card_item">Año: 1990</li>
+              <li class="card_item">Estado: Restaurada</li>
+              <li class="card_item">Combustible: Nafta</li>
+              <li class="card_item">Cilindrada: 600cc</li>
+            </ul>
+
+          </div>
       </section>
 
       <div class="numeracion">  
@@ -348,6 +416,7 @@
           <li class="link_item"> <a href="#"> 
             <i class='bx bx-envelope' ></i>ventas@concesionariatime.com</a>
           </li>
+
           <div class="boton_buscar">
             <form class="form_buscar">
               <input type="search" placeholder="Tu busqueda">
