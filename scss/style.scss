@@ -98,11 +98,12 @@ body {
   .menu_nav {
     display: flex;
     width: 50%;
-    padding: $porcentaje * 3;
+    padding: $porcentaje * 1;
     font-size: $tamanio * 1.1;
     margin-left: $tamanio * 5;
 
     .nav_item {
+      padding: 1%;
       margin: 0 0.7rem;
       list-style: none;
 

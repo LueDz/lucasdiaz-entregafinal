@@ -95,11 +95,12 @@ body {
 .menu .menu_nav {
   display: flex;
   width: 50%;
-  padding: 3%;
+  padding: 1%;
   font-size: 1.1rem;
   margin-left: 5rem;
 }
 .menu .menu_nav .nav_item {
+  padding: 1%;
   margin: 0 0.7rem;
   list-style: none;
 }
