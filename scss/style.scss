@@ -354,6 +354,13 @@ body {
 /* Pagina de F.A.Q */
 
 
+.accordion{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: $porcentaje *10;
+  margin-bottom: $porcentaje *5;
+}
 
 
 

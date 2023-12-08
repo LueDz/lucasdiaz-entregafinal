@@ -290,6 +290,14 @@ body {
 }
 
 /* Pagina de F.A.Q */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
 /*Pagina de contacto */
 .info {
   display: flex;
