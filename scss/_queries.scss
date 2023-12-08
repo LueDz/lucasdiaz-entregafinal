@@ -12,7 +12,7 @@
 @media (max-width: 1160px) {
   .stock {
     .stock_container {
-      transform: translate(5%);
+      transform: translate(8%);
       grid-template-columns: repeat(2, 1fr);
       .stock_card {
         width: 22rem;
@@ -51,7 +51,7 @@
   }
 
   .mapa {
-    width: 400px;
+    width: 70%;
     height: 200px;
   }
 
@@ -112,8 +112,10 @@
   }
 
   .form {
-    margin-left: 5%;
-    width: 80%;
+    .form-floating {
+      width: 150%;
+      transform: translate(-10%);
+    }
   }
 }
 
@@ -138,12 +140,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
     padding: 2%;
   }
 
   .eslogan {
     top: 10%;
+  }
+
+  .stock {
+    .stock_container {
+      .stock_card {
+        width: 15rem;
+      }
+    }
   }
 
   .catalogo {
@@ -185,18 +195,24 @@
       }
     }
   }
+
   .footer {
-    .links {
-      display: none;
+    text-align: center;
+    height: 40rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    .links,
+    .redes {
+      ul {
+        transform: translate(40%);
+      }
     }
+
     .contact {
       .contacto {
-        .boton_buscar {
-          .form_buscar {
-            input {
-              display: flex;
-            }
-          }
+        .link_items {
+          transform: translate(26%);
         }
       }
     }
@@ -210,14 +226,10 @@
       font-size: 1.2rem;
     }
   }
-}
 
-@media (max-width: 680px) {
-  .stock {
-    .stock_container {
-      .stock_card {
-        width: 14rem;
-      }
+  .vehiculos {
+    .stock_card {
+      width: 13rem;
     }
   }
 }
@@ -230,8 +242,25 @@
     }
   }
 
+  .stock {
+    .stock_container {
+      .stock_card {
+        width: 12rem;
+      }
+    }
+  }
+
+  .catalogo {
+    .vehiculos {
+      grid-template-columns: (1fr);
+      transform: translate(12%);
+      .stock_card {
+        width: 18rem;
+      }
+    }
+  }
+
   .mapa {
-    width: 350px;
     height: 150px;
   }
 
@@ -244,16 +273,29 @@
     flex-direction: column;
     width: 60%;
   }
-
-  .stock_card {
-    width: 12rem;
-  }
 }
 
 @media (max-width: 500px) {
   .eslogan {
     top: 8% h1 {
       font-size: 0.8rem;
+    }
+  }
+
+  .stock {
+    .stock_container {
+      .stock_card {
+        width: 10rem;
+      }
+    }
+  }
+
+  .catalogo {
+    .vehiculos {
+      transform: translate(10%);
+      .stock_card {
+        width: 12rem;
+      }
     }
   }
 }

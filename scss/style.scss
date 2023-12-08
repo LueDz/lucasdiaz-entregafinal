@@ -393,6 +393,7 @@ body {
 .footer {
   background-color: rgb(18, 18, 18);
   width: 100%;
+  text-align: center;
   height: 13rem;
   display: flex;
   justify-content: space-between;
@@ -401,6 +402,8 @@ body {
   .links,
   .redes,
   .contact {
+    text-align: center;
+
     h2 {
       font-size: 1.6rem;
     }
@@ -413,21 +416,20 @@ body {
       display: flex;
       flex-direction: column;
 
-      .link_item {
+      .link_item,
+      .link_items {
         list-style: none;
 
         a {
           color: #fff;
           display: flex;
-          align-items: center;
           text-decoration: none;
 
           i {
             color: #84b868;
             padding: $porcentaje * 3;
-
+            align-items: center;
             .bx {
-              margin-right: 6px;
               font-size: 1.2rem;
             }
           }

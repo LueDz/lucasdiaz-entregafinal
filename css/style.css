@@ -323,11 +323,17 @@ body {
 .footer {
   background-color: rgb(18, 18, 18);
   width: 100%;
+  text-align: center;
   height: 13rem;
   display: flex;
   justify-content: space-between;
   color: #fff;
   padding: 1% 4%;
+}
+.footer .links,
+.footer .redes,
+.footer .contact {
+  text-align: center;
 }
 .footer .links h2,
 .footer .redes h2,
@@ -345,28 +351,39 @@ body {
   flex-direction: column;
 }
 .footer .links ul .link_item,
+.footer .links ul .link_items,
 .footer .redes ul .link_item,
-.footer .contact ul .link_item {
+.footer .redes ul .link_items,
+.footer .contact ul .link_item,
+.footer .contact ul .link_items {
   list-style: none;
 }
 .footer .links ul .link_item a,
+.footer .links ul .link_items a,
 .footer .redes ul .link_item a,
-.footer .contact ul .link_item a {
+.footer .redes ul .link_items a,
+.footer .contact ul .link_item a,
+.footer .contact ul .link_items a {
   color: #fff;
   display: flex;
-  align-items: center;
   text-decoration: none;
 }
 .footer .links ul .link_item a i,
+.footer .links ul .link_items a i,
 .footer .redes ul .link_item a i,
-.footer .contact ul .link_item a i {
+.footer .redes ul .link_items a i,
+.footer .contact ul .link_item a i,
+.footer .contact ul .link_items a i {
   color: #84b868;
   padding: 3%;
+  align-items: center;
 }
 .footer .links ul .link_item a i .bx,
+.footer .links ul .link_items a i .bx,
 .footer .redes ul .link_item a i .bx,
-.footer .contact ul .link_item a i .bx {
-  margin-right: 6px;
+.footer .redes ul .link_items a i .bx,
+.footer .contact ul .link_item a i .bx,
+.footer .contact ul .link_items a i .bx {
   font-size: 1.2rem;
 }
 
@@ -410,7 +427,7 @@ body {
 }
 @media (max-width: 1160px) {
   .stock .stock_container {
-    transform: translate(5%);
+    transform: translate(8%);
     grid-template-columns: repeat(2, 1fr);
   }
   .stock .stock_container .stock_card {
@@ -441,7 +458,7 @@ body {
     text-align: center;
   }
   .mapa {
-    width: 400px;
+    width: 70%;
     height: 200px;
   }
   .stock_card {
@@ -477,9 +494,9 @@ body {
     flex-direction: column;
     transform: translate(20%);
   }
-  .form {
-    margin-left: 5%;
-    width: 80%;
+  .form .form-floating {
+    width: 150%;
+    transform: translate(-10%);
   }
 }
 @media (max-width: 768px) {
@@ -499,11 +516,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
     padding: 2%;
   }
   .eslogan {
     top: 10%;
+  }
+  .stock .stock_container .stock_card {
+    width: 15rem;
   }
   .catalogo {
     grid-template-columns: 0.2fr 2fr;
@@ -531,11 +551,18 @@ body {
   .nosotros_historia .historia_img .img_grupo .img_foto img {
     width: 15rem;
   }
-  .footer .links {
-    display: none;
+  .footer {
+    text-align: center;
+    height: 40rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
   }
-  .footer .contact .contacto .boton_buscar .form_buscar input {
-    display: flex;
+  .footer .links ul,
+  .footer .redes ul {
+    transform: translate(40%);
+  }
+  .footer .contact .contacto .link_items {
+    transform: translate(26%);
   }
 }
 @media (max-width: 700px) {
@@ -545,10 +572,8 @@ body {
   .eslogan h1 {
     font-size: 1.2rem;
   }
-}
-@media (max-width: 680px) {
-  .stock .stock_container .stock_card {
-    width: 14rem;
+  .vehiculos .stock_card {
+    width: 13rem;
   }
 }
 @media (max-width: 576px) {
@@ -558,8 +583,17 @@ body {
   .eslogan h1 {
     font-size: 1rem;
   }
+  .stock .stock_container .stock_card {
+    width: 12rem;
+  }
+  .catalogo .vehiculos {
+    grid-template-columns: 1fr;
+    transform: translate(12%);
+  }
+  .catalogo .vehiculos .stock_card {
+    width: 18rem;
+  }
   .mapa {
-    width: 350px;
     height: 150px;
   }
   .contacto ul .link_item {
@@ -570,14 +604,20 @@ body {
     flex-direction: column;
     width: 60%;
   }
-  .stock_card {
-    width: 12rem;
-  }
 }
 @media (max-width: 500px) {
   .eslogan {
     top: 8% h1;
     top-font-size: 0.8rem;
+  }
+  .stock .stock_container .stock_card {
+    width: 10rem;
+  }
+  .catalogo .vehiculos {
+    transform: translate(10%);
+  }
+  .catalogo .vehiculos .stock_card {
+    width: 12rem;
   }
 }
 
