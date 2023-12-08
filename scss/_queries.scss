@@ -198,7 +198,7 @@
 
   .footer {
     text-align: center;
-    height: 40rem;
+    height: 35rem;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
 
@@ -250,7 +250,7 @@
     }
   }
 
-  .catalogo {
+  .catalogo{
     .vehiculos {
       grid-template-columns: (1fr);
       transform: translate(12%);
@@ -258,7 +258,10 @@
         width: 18rem;
       }
     }
+
   }
+
+
 
   .mapa {
     height: 150px;
