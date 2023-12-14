@@ -1,19 +1,9 @@
-@media (max-width: 1220px) {
-  .eslogan {
-    top: 16%;
-    transform: translate(-5%);
-  }
-
-  .stock_card {
-    width: 19rem;
-  }
-}
-
 @media (max-width: 1160px) {
   .stock {
     .stock_container {
-      transform: translate(8%);
+      transform: translate(4%);
       grid-template-columns: repeat(2, 1fr);
+      margin: $porcentaje * 5;
       .stock_card {
         width: 22rem;
       }
@@ -108,13 +98,19 @@
 
   .info {
     flex-direction: column;
-    transform: translate(20%);
-  }
 
-  .form {
-    .form-floating {
-      width: 150%;
-      transform: translate(-10%);
+    
+    .ubicacion{
+      transform: translate(12%);
+    }
+
+
+    .form {
+      transform: translate(40%);
+      .form-floating {
+        width: 150%;
+        transform: translate(-10%);
+      }
     }
   }
 }
@@ -126,21 +122,26 @@
       display: block;
     }
 
+    span {
+      justify-content: center;
+      margin-right: 33%;
+    }
+
     .menu_nav {
       display: none;
     }
   }
 
   .menu #checkbox:checked ~ .menu_nav {
-    background-color: #3e9a75;
+    background-color: #3e9a75c9;
     width: 100%;
-    height: 20rem;
+    height: 15rem;
     position: absolute;
     top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2;
+    z-index: 100;
     padding: 2%;
   }
 
@@ -174,7 +175,7 @@
 
   .catalogo {
     .numeracion {
-      margin-top: 10%;
+      margin-left: 25%;
     }
   }
 
@@ -194,11 +195,17 @@
         }
       }
     }
+
+    .info {
+      .ubicacion {
+        width: 100%;
+      }
+    }
   }
 
   .footer {
     text-align: center;
-    height: 35rem;
+    height: 40rem;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
 
@@ -206,6 +213,7 @@
     .redes {
       ul {
         transform: translate(40%);
+        margin-bottom: 0%;
       }
     }
 
@@ -232,6 +240,18 @@
       width: 13rem;
     }
   }
+
+  .info{
+    h2{
+      font-size: 1.5rem;
+    }
+    .ubicacion{
+
+      h4{
+        font-size: 1rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -248,9 +268,13 @@
         width: 12rem;
       }
     }
+
+    
+
+
   }
 
-  .catalogo{
+  .catalogo {
     .vehiculos {
       grid-template-columns: (1fr);
       transform: translate(12%);
@@ -258,10 +282,7 @@
         width: 18rem;
       }
     }
-
   }
-
-
 
   .mapa {
     height: 150px;

@@ -33,7 +33,9 @@ body {
 
 .form_enviar {
   padding: 5px 10px;
-  border-radius: $tamanio / 2;
+  margin: $porcentaje *3;
+  border-radius: $tamanio * 2;
+  background-color: #fff;
   color: #3e9a75;
   border: 1.5px solid #3e9a75;
   transition: all 0.5s;
@@ -126,16 +128,17 @@ body {
 
 .eslogan {
   color: #ffffffb9;
-  z-index: 1;
   position: absolute;
-  top: 46%;
-  left: 15%;
+  top: 47%;
+  z-index: 1;
+  margin-left: 12%;
 
   h1 {
     width: 100%;
     padding: $tamanio;
     background-color: rgba(0, 0, 0, 0.473);
     border-radius: $tamanio;
+    
   }
 }
 
@@ -231,7 +234,7 @@ body {
     .opinion_card {
       width: 350px;
       background-color: #ebebeb;
-      border-radius: $tamanio / 0.8;
+      border-radius: $tamanio * 0.8;
       padding: $porcentaje;
 
       .opinion_bubble {
@@ -376,7 +379,7 @@ body {
   display: flex;
 
   .ubicacion {
-    width: 60%;
+    width: 80%;
     text-align: center;
     padding: $porcentaje;
 
@@ -421,6 +424,7 @@ body {
   justify-content: space-between;
   color: #fff;
   padding: 1% 4%;
+  
   .links,
   .redes,
   .contact {
@@ -490,7 +494,7 @@ body {
         .form_enviar {
           padding: $porcentaje;
           background-color: black;
-          border-radius: $tamanio / 2;
+          border-radius: $tamanio;
           color: #3e9a75;
           border: 1px solid #3e9a75;
           transition: all 1s;
