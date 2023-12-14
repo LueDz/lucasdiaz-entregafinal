@@ -343,7 +343,7 @@ body {
         /* Aplicando mixin */
 
         img {
-          @include galeria ( 25rem, $tamanio, 1px 1px 5px black)
+          @include galeria(25rem, $tamanio, 1px 1px 5px black);
         }
       }
     }

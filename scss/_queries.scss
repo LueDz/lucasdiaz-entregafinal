@@ -29,7 +29,6 @@
 }
 
 @media (max-width: 992px) {
-  
   .data {
     flex-direction: column;
     text-align: center;
@@ -52,18 +51,15 @@
     }
   }
 
-  .stock{
-    
+  .stock {
     transform: translate(-3%);
-    
   }
 
-  .catalogo{
-    .numeracion{
+  .catalogo {
+    .numeracion {
       transform: translate(-25%);
     }
   }
-
 }
 
 @media (max-width: 905px) {
@@ -73,11 +69,9 @@
       margin: 0;
     }
   }
-
 }
 
 @media (max-width: 890px) {
-  
   .nosotros_historia {
     .historia_img {
       .img_grupo {
@@ -93,21 +87,18 @@
   .info {
     flex-direction: column;
 
-    
-    .ubicacion{
+    .ubicacion {
       transform: translate(12%);
     }
 
-
     .form {
-
       transform: translate(40%);
       .form-floating {
         width: 150%;
         transform: translate(-10%);
       }
 
-      .stock_boton{
+      .stock_boton {
         transform: translate(10%);
       }
     }
@@ -120,7 +111,6 @@
     label {
       margin: 2.5%;
       display: block;
-      
     }
 
     span {
@@ -146,10 +136,9 @@
     padding: 2%;
   }
 
-
   .stock {
     .stock_container {
-    transform: translate(8%);
+      transform: translate(8%);
       .stock_card {
         width: 15rem;
       }
@@ -158,7 +147,7 @@
 
   .catalogo {
     grid-template-columns: 0.2fr 2fr;
-    .numeracion{
+    .numeracion {
       transform: translate(3%);
     }
   }
@@ -166,29 +155,30 @@
   .filtros {
     .filter {
       display: none;
-      h3{
+      h3 {
         font-size: 1.3rem;
       }
 
-      .categoria, .estado, .financiacion, .combustible, .traccion{
-
-        h5{
+      .categoria,
+      .estado,
+      .financiacion,
+      .combustible,
+      .traccion {
+        h5 {
           font-size: 1rem;
         }
       }
     }
   }
 
-#tipos{
-  font-size: .7rem;
-}
-
+  #tipos {
+    font-size: 0.7rem;
+  }
 
   #check_filter:checked ~ .filter {
     display: inline-block;
     width: 100%;
     height: 100%;
-    
   }
 
   .catalogo {
@@ -222,7 +212,6 @@
   }
 
   .footer {
-    
     justify-content: space-evenly;
     text-align: center;
     height: 40rem;
@@ -235,7 +224,7 @@
         transform: translate(40%);
       }
     }
-    
+
     .contacto {
       transform: translate(30%, -20%);
     }
@@ -243,10 +232,9 @@
 }
 
 @media (max-width: 700px) {
-
   .stock {
     .stock_container {
-    transform: translate(6%);
+      transform: translate(6%);
     }
   }
 
@@ -256,13 +244,12 @@
     }
   }
 
-  .info{
-    h2{
+  .info {
+    h2 {
       font-size: 1.5rem;
     }
-    .ubicacion{
-
-      h4{
+    .ubicacion {
+      h4 {
         font-size: 1rem;
       }
     }
@@ -270,7 +257,6 @@
 }
 
 @media (max-width: 576px) {
-
   .stock {
     .stock_container {
       margin-left: 7%;
@@ -278,7 +264,6 @@
         width: 12rem;
       }
     }
-
   }
 
   .catalogo {
@@ -290,7 +275,7 @@
       }
     }
 
-    .numeracion{
+    .numeracion {
       transform: translate(-9%);
     }
   }
@@ -311,17 +296,14 @@
 }
 
 @media (max-width: 500px) {
-
-  .menu{
-
-    label{
-      margin-top: $porcentaje *4;
+  .menu {
+    label {
+      margin-top: $porcentaje * 4;
     }
 
-    span{
+    span {
       font-size: 1.5rem;
-      margin-top: $porcentaje *2;
-      
+      margin-top: $porcentaje * 2;
     }
   }
 
@@ -344,25 +326,23 @@
 }
 
 @media (max-width: 400px) {
-
-  .menu{
-    span{
+  .menu {
+    span {
       font-size: 1.2rem;
-      margin-top: $porcentaje *3;
+      margin-top: $porcentaje * 3;
     }
   }
 
-  .stock{
-    .stock_container{ 
+  .stock {
+    .stock_container {
       transform: translate(2%);
     }
   }
 
-  .catalogo{
-    .numeracion{
+  .catalogo {
+    .numeracion {
       margin-top: 5%;
       margin-left: 12%;
     }
   }
-
 }
