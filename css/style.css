@@ -58,6 +58,7 @@ body {
   margin-bottom: 1%;
   overflow: auto;
   text-align: center;
+  transition: all 0.4s;
 }
 .stock_card h3 {
   margin: 2%;
@@ -68,6 +69,9 @@ body {
 .stock_card .card_txt {
   list-style: none;
   transform: translate(-6%);
+}
+.stock_card:hover {
+  transform: scale(1.04);
 }
 
 /* Navegacion */
@@ -118,20 +122,6 @@ body {
 }
 
 /*Pagina de inicio*/
-.eslogan {
-  color: rgba(255, 255, 255, 0.7254901961);
-  position: absolute;
-  top: 47%;
-  z-index: 1;
-  margin-left: 12%;
-}
-.eslogan h1 {
-  width: 100%;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.473);
-  border-radius: 1rem;
-}
-
 .stock {
   width: 100%;
   height: 100%;
@@ -143,16 +133,16 @@ body {
   justify-content: center;
 }
 .stock .stock_container {
-  width: 100%;
+  width: 95%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-left: 3.5%;
 }
 .stock .stock_container .stock_card {
   width: 17rem;
 }
 .stock .stock_boton {
-  margin-bottom: 4%;
-  margin-left: 3%;
+  margin: 2%;
   text-align: center;
 }
 
@@ -200,6 +190,7 @@ body {
   background-color: #ebebeb;
   border-radius: 0.8rem;
   padding: 1%;
+  transition: all 0.4s;
 }
 .experiencias .exp_container .opinion_card .opinion_bubble {
   display: flex;
@@ -208,6 +199,9 @@ body {
 }
 .experiencias .exp_container .opinion_card .opinion_happy {
   color: #3e9a75;
+}
+.experiencias .exp_container .opinion_card:hover {
+  transform: scale(1.1);
 }
 
 /*Pagina de catalogo */
@@ -254,6 +248,7 @@ body {
 }
 .catalogo .numeracion {
   grid-area: numeracion;
+  margin: 2%;
   margin-left: 40%;
 }
 
@@ -327,7 +322,7 @@ body {
   margin-right: 4%;
 }
 .info .form h2 {
-  margin: 3%;
+  margin-left: 20%;
   margin-bottom: 7%;
 }
 .info .form .form-floating {
@@ -346,19 +341,14 @@ body {
   color: #fff;
   padding: 1% 4%;
 }
-.footer .links,
-.footer .redes,
-.footer .contact {
-  text-align: center;
-}
 .footer .links h2,
 .footer .redes h2,
-.footer .contact h2 {
+.footer .contacto h2 {
   font-size: 1.6rem;
 }
 .footer .links ul,
 .footer .redes ul,
-.footer .contact ul {
+.footer .contacto ul {
   padding: 0;
   padding-top: 1rem;
   width: 160px;
@@ -370,16 +360,16 @@ body {
 .footer .links ul .link_items,
 .footer .redes ul .link_item,
 .footer .redes ul .link_items,
-.footer .contact ul .link_item,
-.footer .contact ul .link_items {
+.footer .contacto ul .link_item,
+.footer .contacto ul .link_items {
   list-style: none;
 }
 .footer .links ul .link_item a,
 .footer .links ul .link_items a,
 .footer .redes ul .link_item a,
 .footer .redes ul .link_items a,
-.footer .contact ul .link_item a,
-.footer .contact ul .link_items a {
+.footer .contacto ul .link_item a,
+.footer .contacto ul .link_items a {
   color: #fff;
   display: flex;
   text-decoration: none;
@@ -388,8 +378,8 @@ body {
 .footer .links ul .link_items a i,
 .footer .redes ul .link_item a i,
 .footer .redes ul .link_items a i,
-.footer .contact ul .link_item a i,
-.footer .contact ul .link_items a i {
+.footer .contacto ul .link_item a i,
+.footer .contacto ul .link_items a i {
   color: #3e9a75;
   padding: 3%;
   align-items: center;
@@ -398,8 +388,8 @@ body {
 .footer .links ul .link_items a i .bx,
 .footer .redes ul .link_item a i .bx,
 .footer .redes ul .link_items a i .bx,
-.footer .contact ul .link_item a i .bx,
-.footer .contact ul .link_items a i .bx {
+.footer .contacto ul .link_item a i .bx,
+.footer .contacto ul .link_items a i .bx {
   font-size: 1.2rem;
 }
 .footer .links ul {
@@ -409,8 +399,18 @@ body {
   transform: translate(15%);
 }
 .footer .contacto {
-  margin-right: 5rem;
+  margin-top: 1rem;
   text-align: center;
+  transform: translate(0, -10%);
+}
+.footer .contacto h2 {
+  margin-right: 145%;
+}
+.footer .contacto ul {
+  transform: translate(-50%);
+}
+.footer .contacto ul .link_items {
+  transform: translate(25%);
 }
 .footer .contacto .boton_buscar {
   margin-top: 1rem;
@@ -460,18 +460,12 @@ body {
   }
 }
 @media (max-width: 992px) {
-  .eslogan {
-    top: 25%;
-  }
-  .eslogan h1 {
-    font-size: 1.8em;
-  }
   .data {
     flex-direction: column;
     text-align: center;
   }
   .mapa {
-    width: 70%;
+    width: 90%;
     height: 200px;
   }
   .stock_card {
@@ -488,9 +482,6 @@ body {
   .catalogo .numeracion {
     transform: translate(-25%);
   }
-  .footer {
-    justify-content: space-evenly;
-  }
 }
 @media (max-width: 905px) {
   .menu .menu_nav {
@@ -499,10 +490,6 @@ body {
   }
 }
 @media (max-width: 890px) {
-  .eslogan h1 {
-    font-size: 1.5rem;
-    transform: translate(0, -50%);
-  }
   .nosotros_historia .historia_img .img_grupo .img_foto img {
     width: 20rem;
   }
@@ -519,10 +506,16 @@ body {
     width: 150%;
     transform: translate(-10%);
   }
+  .info .form .stock_boton {
+    transform: translate(10%);
+  }
 }
 @media (max-width: 768px) {
+  .menu {
+    text-align: center;
+  }
   .menu label {
-    margin: 3% 2%;
+    margin: 2.5%;
     display: block;
   }
   .menu span {
@@ -544,9 +537,6 @@ body {
     z-index: 100;
     padding: 2%;
   }
-  .eslogan {
-    top: 22%;
-  }
   .stock .stock_container {
     transform: translate(7%);
   }
@@ -561,6 +551,15 @@ body {
   }
   .filtros .filter {
     display: none;
+  }
+  .filtros .filter h3 {
+    font-size: 1.3rem;
+  }
+  .filtros .filter .categoria h5, .filtros .filter .estado h5, .filtros .filter .financiacion h5, .filtros .filter .combustible h5, .filtros .filter .traccion h5 {
+    font-size: 1rem;
+  }
+  #tipos {
+    font-size: 0.7rem;
   }
   #check_filter:checked ~ .filter {
     display: inline-block;
@@ -586,6 +585,7 @@ body {
     width: 100%;
   }
   .footer {
+    justify-content: space-evenly;
     text-align: center;
     height: 40rem;
     display: grid;
@@ -594,16 +594,12 @@ body {
   .footer .links ul,
   .footer .redes ul {
     transform: translate(40%);
-    margin-bottom: 0%;
   }
-  .footer .contact .contacto .link_items {
-    transform: translate(26%);
+  .footer .contacto {
+    transform: translate(30%, -20%);
   }
 }
 @media (max-width: 700px) {
-  .eslogan {
-    font-size: 0.5rem;
-  }
   .stock .stock_container {
     transform: translate(5%);
   }
@@ -618,13 +614,6 @@ body {
   }
 }
 @media (max-width: 576px) {
-  .eslogan {
-    top: 19%;
-    margin-left: 15%;
-  }
-  .eslogan h1 {
-    font-size: 1rem;
-  }
   .stock .stock_container .stock_card {
     width: 12rem;
   }
@@ -654,12 +643,6 @@ body {
   .menu span {
     font-size: 1.5rem;
     transform: translate(-10%, 15%);
-  }
-  .eslogan {
-    top: 17%;
-  }
-  .eslogan h1 {
-    font-size: 0.8rem;
   }
   .stock .stock_container {
     transform: translate(7%);

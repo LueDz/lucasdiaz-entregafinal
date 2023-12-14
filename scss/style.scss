@@ -53,6 +53,7 @@ body {
   margin-bottom: $porcentaje ;
   overflow: auto;
   text-align: center;
+  transition: all .4s;
 
   h3 {
     margin: $porcentaje * 2;
@@ -65,6 +66,10 @@ body {
   .card_txt {
     list-style: none;
     transform: translate(-6%);
+  }
+
+  &:hover{
+    transform: scale(1.04);
   }
 }
 
@@ -126,20 +131,6 @@ body {
 
 /*Pagina de inicio*/
 
-.eslogan {
-  color: #ffffffb9;
-  position: absolute;
-  top: 47%;
-  z-index: 1;
-  margin-left: 12%;
-
-  h1 {
-    width: 100%;
-    padding: $tamanio;
-    background-color: rgba(0, 0, 0, 0.473);
-    border-radius: $tamanio;
-  }
-}
 
 .stock {
   width: 100%;
@@ -153,17 +144,17 @@ body {
   }
 
   .stock_container {
-    width: 100%;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-left: 3.5%;
 
     .stock_card {
       width: 17rem;
     }
   }
   .stock_boton {
-    margin-bottom: $porcentaje * 4;
-    margin-left: $porcentaje * 3;
+    margin: $porcentaje * 2;
     text-align: center;
   }
 }
@@ -235,6 +226,7 @@ body {
       background-color: #ebebeb;
       border-radius: $tamanio * 0.8;
       padding: $porcentaje;
+      transition: all .4s;
 
       .opinion_bubble {
         display: flex;
@@ -244,6 +236,10 @@ body {
 
       .opinion_happy {
         color: #3e9a75;
+      }
+
+      &:hover{
+        transform: scale(1.1);
       }
     }
   }
@@ -288,12 +284,15 @@ body {
         .financiacion,
         .combustible,
         .traccion {
+          
           padding: $porcentaje * 3;
           margin: 0.5rem;
+
         }
       }
     }
   }
+
 
   /* Grilla de vehiculos */
 
@@ -311,7 +310,9 @@ body {
 
   .numeracion {
     grid-area: numeracion;
+    margin: $porcentaje *2;
     margin-left: 40%;
+    
   }
 }
 
@@ -399,7 +400,7 @@ body {
     margin-right: $porcentaje * 4;
 
     h2 {
-      margin: $porcentaje * 3;
+      margin-left: $porcentaje * 20;
       margin-bottom: $porcentaje * 7;
     }
 
@@ -424,11 +425,11 @@ body {
 
   .links,
   .redes,
-  .contact {
-    text-align: center;
+  .contacto{
 
     h2 {
       font-size: 1.6rem;
+      
     }
 
     ul {
@@ -442,7 +443,7 @@ body {
       .link_item,
       .link_items {
         list-style: none;
-
+        
         a {
           color: #fff;
           display: flex;
@@ -474,8 +475,21 @@ body {
   }
 
   .contacto {
-    margin-right: 5rem;
+
+    margin-top: 1rem;
     text-align: center;
+    transform: translate(0,-10%);
+
+    h2{
+      margin-right: 145% ;
+    }
+
+    ul{
+      transform: translate(-50%);
+      .link_items{
+        transform: translate(25%);
+      }
+    }
 
     .boton_buscar {
       margin-top: $tamanio;

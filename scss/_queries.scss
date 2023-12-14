@@ -29,19 +29,14 @@
 }
 
 @media (max-width: 992px) {
-  .eslogan {
-    top: 25%;
-    h1 {
-      font-size: 1.8em;
-    }
-  }
+  
   .data {
     flex-direction: column;
     text-align: center;
   }
 
   .mapa {
-    width: 70%;
+    width: 90%;
     height: 200px;
   }
 
@@ -60,8 +55,7 @@
   .stock{
     
     transform: translate(-3%);
-    .stock_container{
-    }
+    
   }
 
   .catalogo{
@@ -70,9 +64,6 @@
     }
   }
 
-  .footer {
-    justify-content: space-evenly;
-  }
 }
 
 @media (max-width: 905px) {
@@ -86,12 +77,7 @@
 }
 
 @media (max-width: 890px) {
-  .eslogan {
-    h1 {
-      font-size: 1.5rem;
-      transform: translate(0,-50%);
-    }
-  }
+  
   .nosotros_historia {
     .historia_img {
       .img_grupo {
@@ -114,10 +100,15 @@
 
 
     .form {
+
       transform: translate(40%);
       .form-floating {
         width: 150%;
         transform: translate(-10%);
+      }
+
+      .stock_boton{
+        transform: translate(10%);
       }
     }
   }
@@ -125,9 +116,11 @@
 
 @media (max-width: 768px) {
   .menu {
+    text-align: center;
     label {
-      margin: 3% 2%;
+      margin: 2.5%;
       display: block;
+      
     }
 
     span {
@@ -153,9 +146,6 @@
     padding: 2%;
   }
 
-  .eslogan {
-    top: 22%;
-  }
 
   .stock {
     .stock_container {
@@ -176,13 +166,29 @@
   .filtros {
     .filter {
       display: none;
+      h3{
+        font-size: 1.3rem;
+      }
+
+      .categoria, .estado, .financiacion, .combustible, .traccion{
+
+        h5{
+          font-size: 1rem;
+        }
+      }
     }
   }
+
+#tipos{
+  font-size: .7rem;
+}
+
 
   #check_filter:checked ~ .filter {
     display: inline-block;
     width: 100%;
     height: 100%;
+    
   }
 
   .catalogo {
@@ -216,6 +222,8 @@
   }
 
   .footer {
+    
+    justify-content: space-evenly;
     text-align: center;
     height: 40rem;
     display: grid;
@@ -225,25 +233,16 @@
     .redes {
       ul {
         transform: translate(40%);
-        margin-bottom: 0%;
       }
     }
-
-    .contact {
-      .contacto {
-        .link_items {
-          transform: translate(26%);
-        }
-      }
+    
+    .contacto {
+      transform: translate(30%, -20%);
     }
   }
 }
 
 @media (max-width: 700px) {
-
-  .eslogan{
-    font-size: .5rem;
-  }
 
   .stock {
     .stock_container {
@@ -271,13 +270,6 @@
 }
 
 @media (max-width: 576px) {
-  .eslogan {
-    top: 19%;
-    margin-left: 15%;
-    h1 {
-      font-size: 1rem;
-    }
-  }
 
   .stock {
     .stock_container {
@@ -327,12 +319,7 @@
   }
 
 
-  .eslogan {
-    top: 17%;
-     h1 {
-      font-size: 0.8rem;
-    }
-  }
+  
 
   .stock {
     .stock_container {
