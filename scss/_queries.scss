@@ -352,3 +352,26 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+
+  .menu{
+    span{
+      font-size: 1.2rem;
+    }
+  }
+
+  .stock{
+    .stock_container{
+      margin-left: 0;
+    }
+  }
+
+  .catalogo{
+    .numeracion{
+      margin-top: 5%;
+      margin-left: 12%;
+    }
+  }
+
+}
