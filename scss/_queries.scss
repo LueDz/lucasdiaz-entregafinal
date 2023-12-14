@@ -149,7 +149,7 @@
 
   .stock {
     .stock_container {
-    transform: translate(7%);
+    transform: translate(8%);
       .stock_card {
         width: 15rem;
       }
@@ -246,7 +246,7 @@
 
   .stock {
     .stock_container {
-    transform: translate(5%);
+    transform: translate(6%);
     }
   }
 
@@ -273,6 +273,7 @@
 
   .stock {
     .stock_container {
+      margin-left: 7%;
       .stock_card {
         width: 12rem;
       }
@@ -312,18 +313,20 @@
 @media (max-width: 500px) {
 
   .menu{
+
+    label{
+      margin-top: $porcentaje *4;
+    }
+
     span{
       font-size: 1.5rem;
-      transform: translate(-10%, 15%);
+      margin-top: $porcentaje *2;
+      
     }
   }
 
-
-  
-
   .stock {
     .stock_container {
-      transform: translate(7%);
       .stock_card {
         width: 10rem;
       }
@@ -345,12 +348,13 @@
   .menu{
     span{
       font-size: 1.2rem;
+      margin-top: $porcentaje *3;
     }
   }
 
   .stock{
-    .stock_container{
-      margin-left: 0;
+    .stock_container{ 
+      transform: translate(2%);
     }
   }
 

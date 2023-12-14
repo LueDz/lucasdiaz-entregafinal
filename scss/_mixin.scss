@@ -1,0 +1,5 @@
+@mixin galeria ($width, $border, $shadow){
+    width: $width;
+    border-radius: $border;
+    box-shadow: $shadow;
+}

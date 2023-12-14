@@ -1,6 +1,7 @@
 @import "../scss/reset";
 @import "../scss/variables";
 @import "../scss/fonts";
+@import "../scss/mixin";
 
 h1 {
   font-family: $font1;
@@ -50,10 +51,10 @@ body {
   width: 20rem;
   border-radius: $tamanio;
   border: solid 1px rgba(0, 0, 0, 0.174);
-  margin-bottom: $porcentaje ;
+  margin-bottom: $porcentaje;
   overflow: auto;
   text-align: center;
-  transition: all .4s;
+  transition: all 0.4s;
 
   h3 {
     margin: $porcentaje * 2;
@@ -68,7 +69,7 @@ body {
     transform: translate(-6%);
   }
 
-  &:hover{
+  &:hover {
     transform: scale(1.04);
   }
 }
@@ -130,7 +131,6 @@ body {
 }
 
 /*Pagina de inicio*/
-
 
 .stock {
   width: 100%;
@@ -226,7 +226,7 @@ body {
       background-color: #ebebeb;
       border-radius: $tamanio * 0.8;
       padding: $porcentaje;
-      transition: all .4s;
+      transition: all 0.4s;
 
       .opinion_bubble {
         display: flex;
@@ -238,7 +238,7 @@ body {
         color: #3e9a75;
       }
 
-      &:hover{
+      &:hover {
         transform: scale(1.1);
       }
     }
@@ -284,15 +284,12 @@ body {
         .financiacion,
         .combustible,
         .traccion {
-          
           padding: $porcentaje * 3;
           margin: 0.5rem;
-
         }
       }
     }
   }
-
 
   /* Grilla de vehiculos */
 
@@ -310,9 +307,8 @@ body {
 
   .numeracion {
     grid-area: numeracion;
-    margin: $porcentaje *2;
+    margin: $porcentaje * 2;
     margin-left: 40%;
-    
   }
 }
 
@@ -343,9 +339,11 @@ body {
       list-style: none;
       .img_foto {
         margin: 2%;
+
+        /* Aplicando mixin */
+
         img {
-          width: 25rem;
-          border-radius: $tamanio;
+          @include galeria ( 25rem, $tamanio, 1px 1px 5px black)
         }
       }
     }
@@ -425,11 +423,9 @@ body {
 
   .links,
   .redes,
-  .contacto{
-
+  .contacto {
     h2 {
       font-size: 1.6rem;
-      
     }
 
     ul {
@@ -443,7 +439,7 @@ body {
       .link_item,
       .link_items {
         list-style: none;
-        
+
         a {
           color: #fff;
           display: flex;
@@ -475,18 +471,17 @@ body {
   }
 
   .contacto {
-
     margin-top: 1rem;
     text-align: center;
-    transform: translate(0,-10%);
+    transform: translate(0, -10%);
 
-    h2{
-      margin-right: 145% ;
+    h2 {
+      margin-right: 145%;
     }
 
-    ul{
+    ul {
       transform: translate(-50%);
-      .link_items{
+      .link_items {
         transform: translate(25%);
       }
     }
